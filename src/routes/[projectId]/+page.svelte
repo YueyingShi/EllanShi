@@ -1,8 +1,8 @@
 <script>
 	/** @type {import('./$types').PageData} */
-	import projectdata from '$lib/json/projectdata.json';
+	import projects from '$lib/json/projects.json';
 	export let data;
-	let current_project = projectdata.projects.find((e) => e.id === data.Id);
+	let current_project = projects.find((e) => e.id === data.Id);
 </script>
 
 <div id="banner" class="flex flex-col items-center justify-center lg:h-[30vh]">
