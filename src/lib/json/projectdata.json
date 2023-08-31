@@ -1,7 +1,7 @@
 {
 	"projects": [
 		{
-			"id": "1",
+			"id": "with-u",
 			"name": "With U",
 			"short_description": "Long-relationship communication",
 			"introduction": [
@@ -17,7 +17,7 @@
 			"field": ["UX Design", "UX Research", "Gamification"]
 		},
 		{
-			"id": "2",
+			"id": "best-roommate",
 			"name": "Best Roommate",
 			"short_description": "Roommate matching community ",
 			"introduction": [
@@ -31,7 +31,7 @@
 			},
 			"field": ["UX Design", "UX Research", "Online Community"]
 		},
-		{ "id": "3", "name": "YIUI", "short_description": "Smart TV system" },
+		{ "id": "yiui", "name": "YIUI", "short_description": "Smart TV system" },
 		{
 			"name": "Another project",
 			"short_description": "Short description"
