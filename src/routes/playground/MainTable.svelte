@@ -6,7 +6,8 @@
 	<div class="inline-block min-w-full align-middle">
 		<!-- the table  -->
 		<!-- table header  -->
-		<div class="sticky top-0 z-10 min-w-full">
+		<div class="absolute top-0 z-20 bg-white">operation</div>
+		<div class="sticky top-10 z-10 min-w-full text-sm">
 			<div
 				class="flex gap-6 border-b border-gray-300 bg-white bg-opacity-75 font-semibold text-gray-900 backdrop-blur backdrop-filter py-3.5 sm:px-6 lg:px-8"
 			>
@@ -21,9 +22,9 @@
 			</div>
 		</div>
 		<!-- table body  -->
-		<div class="min-w-full">
+		<div class="min-w-full text-sm">
 			{#each sustainability as project}
-				<div class="flex gap-6 border-b border-gray-200 py-4 sm:px-6 lg:px-8">
+				<div class="flex gap-6 border-b border-gray-200 text-gray-800 py-4 sm:px-6 lg:px-8">
 					<div class="w-48">
 						{project.project_id ? project.project_id : '--'}
 					</div>
