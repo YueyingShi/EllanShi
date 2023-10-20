@@ -2,7 +2,11 @@ import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
 export function load({ params }) {
-	return {
-		Id: params.projectId
-	};
+	if (params.projectProp) {
+		return {
+			prop: params.projectProp
+		};
+	} else {
+		return { prop: 'notfound' };
+	}
 }
