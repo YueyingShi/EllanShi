@@ -14,7 +14,7 @@
 			"Project": "UX Design course",
 			"Team/ Individual": "Individual"
 		},
-		"field": ["UX Design", "UX Research", "Gamification"]
+		"keywords": ["UX Design", "UX Research", "Gamification"]
 	},
 	{
 		"prop": "best-roommate",
@@ -30,13 +30,14 @@
 			"Project": "Internship assignment",
 			"Team/ Individual": "Individual"
 		},
-		"field": ["UX Design", "UX Research", "Online Community"]
+		"keywords": ["UX Design", "UX Research", "Online Community"]
 	},
 	{
 		"prop": "yiui",
 		"name": "YIUI",
 		"id": 3,
-		"short_description": "Smart TV system"
+		"short_description": "Smart TV system",
+		"keywords": ["Communication Design"]
 	},
 	{
 		"name": "Another project",

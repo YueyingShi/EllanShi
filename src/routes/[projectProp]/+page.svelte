@@ -1,6 +1,8 @@
 <script>
 	/** @type {import('./$types').PageData} */
 	import projects from '$lib/json/projects.json';
+	import H1 from '$lib/components/atoms/headings/H1.svelte';
+	import H4 from '$lib/components/atoms/headings/H4.svelte';
 	import BestRoommate from './BestRoommate.svelte';
 	import WithU from './WithU.svelte';
 	export let data;
@@ -8,7 +10,7 @@
 </script>
 
 <div id="banner" class="flex flex-col items-center justify-center lg:h-[30vh] bg-slate-200">
-	<h1 class="text-3xl">{current_project?.name}</h1>
+	<H1>{current_project?.name}</H1>
 	<div>{current_project?.short_description}</div>
 	<div>here should be some budgets for the field</div>
 </div>
@@ -16,10 +18,14 @@
 
 <div class="max-w-5xl my-6 mx-auto gap-2 sm:grid sm:grid-cols-2 sm:gap-4">
 	<div>
-		<p>Background</p>
+		<H4>Background</H4>
+		<p>
+		When
+		</p>
+		<p>{current_project.}</p>
 	</div>
 	<div>
-		<p>Introduction</p>
+		<H4>Brief</H4>
 		{#if current_project?.introduction}
 			{#each current_project.introduction as p}
 				<p>{p}</p>
