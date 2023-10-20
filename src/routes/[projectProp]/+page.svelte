@@ -19,10 +19,8 @@
 <div class="max-w-5xl my-6 mx-auto gap-2 sm:grid sm:grid-cols-2 sm:gap-4">
 	<div>
 		<H4>Background</H4>
-		<p>
-		When
-		</p>
-		<p>{current_project.}</p>
+		<p>When</p>
+		<p>{current_project?.background?.Date}</p>
 	</div>
 	<div>
 		<H4>Brief</H4>
