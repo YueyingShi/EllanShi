@@ -1,8 +1,12 @@
 <script>
+	import Navbar from './Navbar.svelte';
+
 	import '../app.css';
 </script>
 
 <header />
+
+<Navbar />
 <slot />
 <footer />
 
