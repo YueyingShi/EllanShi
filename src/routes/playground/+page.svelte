@@ -1,8 +1,8 @@
 <script lang="ts">
-	import ChartBar from '$lib/components/atoms/svgs/ChartBar.svelte';
-	import Cog6 from '$lib/components/atoms/svgs/Cog6.svelte';
-	import QuarterCircle from '$lib/components/atoms/svgs/QuarterCircle.svelte';
-	import Table from '$lib/components/atoms/svgs/Table.svelte';
+	import ChartBar from '$lib/components/svgs/ChartBar.svelte';
+	import Cog6 from '$lib/components/svgs/Cog6.svelte';
+	import QuarterCircle from '$lib/components/svgs/QuarterCircle.svelte';
+	import Table from '$lib/components/svgs/Table.svelte';
 	import sustainability from '$lib/json/sustainability.json';
 	import MainTable from './MainTable.svelte';
 </script>
