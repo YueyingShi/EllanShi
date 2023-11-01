@@ -4,6 +4,7 @@
 		"name": "With U",
 		"id": 1,
 		"short_description": "Long-relationship communication",
+		"keywords": ["UX Design", "Gamification"],
 		"introduction": [
 			"I have seen many friends around me choose a long-distance-relationship, which is also a common phenomenon to the increasing couples in the whole nation.The lack of communication and companionship is the biggest obstacle for those who choose a long-distance-relationship.",
 			"This application uses unique forms and methods like Delayed Sending, Gift Exchange and Create Topic to solve the communication problems such as the lack of companionship between long distance couples."
@@ -13,14 +14,14 @@
 			"Location": "Guangzhou, China",
 			"Project": "UX Design course",
 			"Team/ Individual": "Individual"
-		},
-		"keywords": ["UX Design", "UX Research", "Gamification"]
+		}
 	},
 	{
 		"prop": "best-roommate",
 		"name": "Best Roommate",
 		"id": 2,
 		"short_description": "Roommate matching community ",
+		"keywords": ["UX Design", "Online Community"],
 		"introduction": [
 			"The Best Roommate App is a budding startup with the goal of offering an uncomplicated and trustworthy platform for city dwellers to locate roommates within their urban vicinity. This conceptual framework aims to foster an engaging and tailored journey for the younger demographic, who are currently at the forefront of the rental housing landscape."
 		],
@@ -29,27 +30,54 @@
 			"Location": "Eindhoven, Netherlands",
 			"Project": "Internship assignment",
 			"Team/ Individual": "Individual"
-		},
-		"keywords": ["UX Design", "UX Research", "Online Community"]
+		}
 	},
 	{
 		"prop": "yiui",
 		"name": "YIUI",
 		"id": 3,
 		"short_description": "Smart TV system",
+		"keywords": ["UX Design", "UX Research"]
+	},
+	{
+		"prop": "food-tinder",
+		"name": "Food Tinder",
+		"id": 4,
+		"short_description": "AI Recipe Recommendation"
+	},
+	{
+		"prop": "e-classroom",
+		"name": "E-Classroom",
+		"id": 5,
+		"short_description": "Hybird-study platform redesign",
+		"keywords": ["UX Design", "Online Community"]
+	},
+	{
+		"prop": "sugar-ribbon",
+		"name": "Sugar ribbon",
+		"id": 6,
+		"short_description": "Communication support for diabetes patients and their families",
+		"keywords": ["UX Design", "Data Analysis", "Data Visualization"]
+	},
+	{
+		"prop": "wayfinding",
+		"name": "Way Finding",
+		"id": 7,
+		"short_description": "Glow Festival Way Finding installation",
+		"keywords": ["Installation", "Communication Design"]
+	},
+	{
+		"prop": "glow-poster",
+		"name": "Glow Festival",
+		"id": 8,
+		"short_description": "Graph and communication design for Glow festival",
 		"keywords": ["Communication Design"]
 	},
 	{
-		"name": "Another project",
-		"id": 4,
-		"short_description": "Short description"
-	},
-	{
-		"name": "Another project",
-		"short_description": "Short description"
-	},
-	{
-		"name": "Another project",
-		"short_description": "Short description"
+		"prop": "us-vote",
+		"name": "Voices of People",
+		"id": 8,
+		"short_description": "Data visualization for US votes",
+		"keywords": ["Software Development", "Data Analysis"]
 	}
 ]
