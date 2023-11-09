@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	let basic = 'font-semibold pb-1 hover:border-b-2 hover:border-gray-400 hover:text-gray-600';
 	let active = 'border-b-2 border-gray-700';
+	console.log($page.route.id, $page.params);
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -10,12 +11,18 @@
 	<div class=" flex px-4 max-w-6xl mx-auto">
 		<div class="flex-1">
 			<a href="/">
-				<img class="h-6 w-6" src="/favicon.png" alt="" />
+				<img
+					class="{$page.route.id === '/' || '/story' ? 'hidden' : ''} h-6 w-auto mix-blend-darken"
+					src="/ellan_sign.png"
+					alt=""
+				/>
 			</a>
 		</div>
 		<div class="flex-none flex gap-4">
-			<a href="/"><p class="{basic} {$page.params ? active : ' '}">Works</p></a>
-			<a href="/"><p class="{basic} {$page.params ? '' : active}">My-Story</p></a>
+			<a href="/"><p class="{basic} {$page.route.id === '/' ? active : ' '}">Works</p></a>
+			<a href="/story"
+				><p class="{basic} {$page.route.id?.includes('story') ? active : ''}">My-Story</p></a
+			>
 		</div>
 	</div>
 </div>

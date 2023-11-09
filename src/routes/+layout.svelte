@@ -1,14 +1,28 @@
 <script>
-	import Navbar from './Navbar.svelte';
-
 	import '../app.css';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import { tick } from 'svelte';
+	let loading = true;
+
+	async function loadData() {
+		// Wait for the component to render
+		await tick();
+		// Set loading to false
+		loading = false;
+		console.log('loaded');
+	}
+	loadData();
 </script>
 
-<header />
+{#if loading}
+	<div>Loading...</div>
+{:else}
+	<header />
 
-<Navbar />
-<slot />
-<footer />
+	<Navbar />
+	<slot />
+	<footer />
+{/if}
 
 <style lang="postcss">
 	:global(html) {
