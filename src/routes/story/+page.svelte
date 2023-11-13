@@ -2,6 +2,7 @@
 	import Banner from '$lib/components/Banner.svelte';
 	import H1 from '$lib/components/atoms/headings/H1.svelte';
 	import H3 from '$lib/components/atoms/headings/H3.svelte';
+	import { Icon, ArrowUp, AdjustmentsHorizontal, Funnel } from 'svelte-hero-icons';
 </script>
 
 <Banner>
@@ -15,7 +16,8 @@
 
 <div class="max-w-6xl my-6 mx-auto gap-2 sm:grid sm:grid-cols-2 sm:gap-4">
 	<div>
-		<H3>Background</H3>
+		<Icon src={AdjustmentsHorizontal} mini />
+		<Icon src={Funnel} solid />
 	</div>
 	<div>
 		<H3>Brief</H3>
