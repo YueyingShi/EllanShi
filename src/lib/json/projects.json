@@ -1,6 +1,66 @@
 [
 	{
+		"prop": "rasch",
+		"component": "Rasch",
+		"name": "Rasch-Model",
+		"id": 1,
+		"short_description": "Test-Free Assessment of Presence in VR Using a Rasch-Model Based Approach",
+		"keywords": ["Research", "Virtual Reality"],
+		"introduction": [
+			"In today's tech-driven world, virtual environments (VE) show tremendous potential across various sectors. Evaluating the sense of presence in VEs is crucial for understanding user experiences. Existing methods struggle to align self-report, behavioral, and physiological indicators, lacking standardized tools for comparisons across studies. ",
+			"Haans and IJsselsteijn (2018) introduced a solution with their Rasch model-based approach. This study validates its effectiveness through presence studies in pit and street VEs, showing successful cross-study comparisons. The findings underscore the method's usability and contribute valuable insights to enhance presence measurement tools, shaping the future of this field."
+		],
+		"background": {
+			"Date": "JAN 2019",
+			"Location": "Guangzhou, China",
+			"Project": "Design course",
+			"Team/ Individual": "Individual"
+		},
+		"coverimage": "https://images.pexels.com/photos/3183143/pexels-photo-3183143.jpeg?auto=compress&cs=tinysrgb&w=1600"
+	},
+	{
+		"prop": "sugar-ribbon",
+		"name": "Sugar ribbon",
+		"id": 6,
+		"short_description": "Communication support for diabetes patients and their families",
+		"keywords": ["Design", "Data"],
+		"coverimage": "https://images.unsplash.com/photo-1593491205049-7f032d28cf5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGlhYmV0ZXN8ZW58MHx8MHx8fDA%3D"
+	},
+	{
+		"prop": "wayfinding",
+		"name": "Way Finding",
+		"id": 7,
+		"short_description": "Glow Festival Way Finding installation",
+		"keywords": ["Installation", "Design"],
+		"coverimage": "https://gloweindhoven.nl/assets/uploads/GLOW2021_Wayfinding-and-Storytelling_BvOF_01_lr_cl8xOTIweDEwODBfZF8xX2pwZ18vX2Fzc2V0L19wcml2YXRlL2Jhbm5lcjIvNDE4NA_6e268ca0.jpg"
+	},
+	{
+		"prop": "us-vote",
+		"name": "Voices of People",
+		"id": 8,
+		"short_description": "Data for US votes",
+		"keywords": ["Development", "Data"],
+		"coverimage": "https://www.idea.int/sites/default/files/news/2020-09-04-elections-monitor-usa.jpg"
+	},
+	{
+		"prop": "yiui",
+		"component": "YIUI",
+		"name": "YIUI",
+		"id": 3,
+		"short_description": "Smart TV system",
+		"keywords": ["Design", "Research"],
+		"coverimage": "https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=1600"
+	},
+	{
+		"prop": "food-tinder",
+		"name": "Food Tinder",
+		"id": 4,
+		"short_description": "AI Recipe Recommendation",
+		"coverimage": "https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVjaXBlfGVufDB8fDB8fHww"
+	},
+	{
 		"prop": "with-u",
+		"component": "WithU",
 		"name": "With U",
 		"id": 1,
 		"short_description": "Long-relationship communication",
@@ -14,7 +74,8 @@
 			"Location": "Guangzhou, China",
 			"Project": "Design course",
 			"Team/ Individual": "Individual"
-		}
+		},
+		"coverimage": "https://plus.unsplash.com/premium_photo-1698276989965-d00e2fff0078?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
 	},
 	{
 		"prop": "best-roommate",
@@ -30,54 +91,23 @@
 			"Location": "Eindhoven, Netherlands",
 			"Project": "Internship assignment",
 			"Team/ Individual": "Individual"
-		}
-	},
-	{
-		"prop": "yiui",
-		"name": "YIUI",
-		"id": 3,
-		"short_description": "Smart TV system",
-		"keywords": ["Design", "Research"]
-	},
-	{
-		"prop": "food-tinder",
-		"name": "Food Tinder",
-		"id": 4,
-		"short_description": "AI Recipe Recommendation"
+		},
+		"coverimage": "https://media.istockphoto.com/id/1335446272/photo/college-students-moving-in-dorm.jpg?b=1&s=612x612&w=0&k=20&c=vA_EHdELE3VUVwG_BCznFpwA-AzwvoBnn6iHOUcAKeA="
 	},
 	{
 		"prop": "e-classroom",
 		"name": "E-Classroom",
 		"id": 5,
 		"short_description": "Hybird-study platform redesign",
-		"keywords": ["Design", "Community"]
-	},
-	{
-		"prop": "sugar-ribbon",
-		"name": "Sugar ribbon",
-		"id": 6,
-		"short_description": "Communication support for diabetes patients and their families",
-		"keywords": ["Design", "Data"]
-	},
-	{
-		"prop": "wayfinding",
-		"name": "Way Finding",
-		"id": 7,
-		"short_description": "Glow Festival Way Finding installation",
-		"keywords": ["Installation", "Design"]
+		"keywords": ["Design", "Community"],
+		"coverimage": "https://images.unsplash.com/photo-1616531770192-6eaea74c2456?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVldGluZyUyMG9ubGluZXxlbnwwfHwwfHx8MA%3D%3D"
 	},
 	{
 		"prop": "glow-poster",
 		"name": "Glow Festival",
 		"id": 8,
 		"short_description": "Graph and communication design for Glow festival",
-		"keywords": ["Design"]
-	},
-	{
-		"prop": "us-vote",
-		"name": "Voices of People",
-		"id": 8,
-		"short_description": "Data for US votes",
-		"keywords": ["Development", "Data"]
+		"keywords": ["Design"],
+		"coverimage": "https://www.luciassociation.org/wp-content/uploads/2016/08/GLOW2019-21-Sunflowers-for-Van-Gogh-05-BvOF-HR-.jpg"
 	}
 ]

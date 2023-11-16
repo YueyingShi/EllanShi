@@ -1,5 +1,7 @@
 <script lang="ts">
 	import H5 from '$lib/components/atoms/headings/H5.svelte';
+	import H3 from './atoms/headings/H3.svelte';
+	import H4 from './atoms/headings/H4.svelte';
 	export let index = 1;
 	export let title: string = '';
 	export let description: string = '';
@@ -8,11 +10,19 @@
 </script>
 
 <div
-	class="project-card rounded-md h-56 p-4 bg-slate-500 text-transparent transition-transform hover:scale-[1.03] hover:shadow-lg hover:text-white"
+	class="project-card relative group rounded-md h-56 bg-slate-500 transition-transform hover:scale-[1.03] hover:shadow-lg overflow-hidden"
 	style="background-image:url({bg_url}); background-size: cover;background-position: center"
 >
-	<H5>{title}</H5>
-	<p>{description}</p>
+	<div
+		class=" p-4 absolute bottom-0 group-hover:hidden w-full h-12 text-white"
+		style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7));"
+	>
+		<p>{title}</p>
+	</div>
+	<div class="p-4 h-full text-transparent group-hover:text-white flex flex-col gap-1 justify-end">
+		<H5>{title}</H5>
+		<p class="text-sm group-hover:text-slate-100 leading-4">{description}</p>
+	</div>
 </div>
 
 <style style="postcss">

@@ -2,6 +2,7 @@
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { tick } from 'svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	let loading = true;
 
 	async function loadData() {
@@ -21,7 +22,7 @@
 
 	<Navbar />
 	<slot />
-	<footer />
+	<Footer />
 {/if}
 
 <style lang="postcss">

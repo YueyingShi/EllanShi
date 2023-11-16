@@ -14,12 +14,4 @@
 </Banner>
 <!-- here is the general background information block -->
 
-<div class="max-w-6xl my-6 mx-auto gap-2 sm:grid sm:grid-cols-2 sm:gap-4">
-	<div>
-		<Icon src={AdjustmentsHorizontal} mini />
-		<Icon src={Funnel} solid />
-	</div>
-	<div>
-		<H3>Brief</H3>
-	</div>
-</div>
+<div class="max-w-6xl my-6 mx-auto gap-2 sm:grid sm:grid-cols-2 sm:gap-4" />

@@ -1,12 +1,13 @@
 <script lang="ts">
 	export let selected = true;
+	export let outline = true;
 </script>
 
 <button
 	on:click
 	type="button"
-	class="rounded-md px-2.5 py-1.5 text-sm font-semibold
-    {selected
-		? 'bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-		: 'text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'}"><slot /></button
+	class=" px-3 py-2 font-semibold
+    {outline
+		? 'border-2 border-orange-500 text-orange-500 transition-all hover:bg-orange-500 hover:text-white active:border-0 active:bg-orange-300 '
+		: 'bg-slate-600 text-white shadow-sm hover:bg-slate-500 '}"><slot /></button
 >

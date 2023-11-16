@@ -12,7 +12,9 @@
 		<div class="flex-1">
 			<a href="/">
 				<img
-					class="{$page.route.id === '/' || '/story' ? 'hidden' : ''} h-6 w-auto mix-blend-darken"
+					class="{$page.route.id === '/' || $page.route.id === '/story'
+						? 'hidden'
+						: 'block'} h-6 w-auto mix-blend-darken"
 					src="/ellan_sign.png"
 					alt=""
 				/>
