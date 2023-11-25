@@ -2,19 +2,18 @@
 	{
 		"prop": "rasch",
 		"component": "Rasch",
-		"name": "Rasch-Model",
+		"name": "Rasch-Model and Sence of Presence",
 		"id": 1,
 		"short_description": "Test-Free Assessment of Presence in VR Using a Rasch-Model Based Approach",
 		"keywords": ["Research", "Virtual Reality"],
 		"introduction": [
-			"In today's tech-driven world, virtual environments (VE) show tremendous potential across various sectors. Evaluating the sense of presence in VEs is crucial for understanding user experiences. Existing methods struggle to align self-report, behavioral, and physiological indicators, lacking standardized tools for comparisons across studies. ",
-			"Haans and IJsselsteijn (2018) introduced a solution with their Rasch model-based approach. This study validates its effectiveness through presence studies in pit and street VEs, showing successful cross-study comparisons. The findings underscore the method's usability and contribute valuable insights to enhance presence measurement tools, shaping the future of this field."
-		],
+		"I am a devoted fan of virtual reality, despite experiencing motion sickness. In 2016, I immersed myself in working with a healthcare research organization, exploring how virtual environments can elicit and measure human emotions. This experience inspired my master's thesis, where I continued to delve into this fascinating field.",
+	"This study focuses on fundamental aspects, addressing a gap in comparison methods between virtual environments (VEs). Traditionally, determining which VE is more immersive relied solely on subjective feelings. However, with the introduction of the Rasch Model, a powerful method based on observing user behavior that analyzes different studies in one domain on the same scale, we now have a more objective tool."],
 		"background": {
-			"Date": "JAN 2019",
-			"Location": "Guangzhou, China",
-			"Project": "Design course",
-			"Team/ Individual": "Individual"
+			"date": "March 2022",
+			"location": "Eindhoven, Netherlands",
+			"project": "Master Thesis",
+			"team": "Individual"
 		},
 		"coverimage": "https://images.pexels.com/photos/3183143/pexels-photo-3183143.jpeg?auto=compress&cs=tinysrgb&w=1600"
 	},
@@ -87,10 +86,10 @@
 			"The Best Roommate App is a budding startup with the goal of offering an uncomplicated and trustworthy platform for city dwellers to locate roommates within their urban vicinity. This conceptual framework aims to foster an engaging and tailored journey for the younger demographic, who are currently at the forefront of the rental housing landscape."
 		],
 		"background": {
-			"Date": "JAN 2021",
-			"Location": "Eindhoven, Netherlands",
-			"Project": "Internship assignment",
-			"Team/ Individual": "Individual"
+			"date": "JAN 2021",
+			"location": "Eindhoven, Netherlands",
+			"project": "Internship assignment",
+			"team": "Individual"
 		},
 		"coverimage": "https://media.istockphoto.com/id/1335446272/photo/college-students-moving-in-dorm.jpg?b=1&s=612x612&w=0&k=20&c=vA_EHdELE3VUVwG_BCznFpwA-AzwvoBnn6iHOUcAKeA="
 	},

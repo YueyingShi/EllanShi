@@ -7,10 +7,13 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
-<div class=" {y > 20 ? 'bg-white' : ''} fixed w-full py-3">
+<div
+	class=" {y > 20 ? 'bg-white shadow-lg ' : 'bg-transparent'} transition-all fixed w-full py-3 z-10">
 	<div class=" flex px-4 max-w-6xl mx-auto">
 		<div class="flex-1">
-			<a href="/">
+			<a 
+			
+			href="/">
 				<img
 					class="{$page.route.id === '/' || $page.route.id === '/story'
 						? 'hidden'

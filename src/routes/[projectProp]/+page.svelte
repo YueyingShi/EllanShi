@@ -31,15 +31,27 @@
 			<div class="flex flex-col gap-2">
 				<H3>Background</H3>
 				<div class="flex gap-2">
-					<p class="text-slate-800 w-1/3 flex-none">When</p>
-					<p class="flex-1">{current_project?.background?.Date}</p>
+					<p class="text-slate-600 w-24 flex-none">Date</p>
+					<p class="flex-1">{current_project?.background?.date}</p>
+				</div>
+				<div class="flex gap-2">
+					<p class="text-slate-600 w-24 flex-none">Location</p>
+					<p class="flex-1">{current_project?.background?.location}</p>
+				</div>
+				<div class="flex gap-2">
+					<p class="text-slate-600 w-24 flex-none">Project</p>
+					<p class="flex-1">{current_project?.background?.project}</p>
+				</div>
+				<div class="flex gap-2">
+					<p class="text-slate-600 w-24 flex-none">Team</p>
+					<p class="flex-1">{current_project?.background?.team}</p>
 				</div>
 			</div>
 			<div class="flex flex-col gap-2">
 				<H3>Brief</H3>
 				{#if current_project?.introduction}
 					{#each current_project.introduction as p}
-						<p>{p}</p>
+						<p class="text-slate-600">{p}</p>
 					{/each}
 				{/if}
 			</div>

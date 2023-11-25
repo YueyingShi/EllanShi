@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="project-card relative group rounded-md h-56 bg-slate-500 transition-transform hover:scale-[1.03] hover:shadow-lg overflow-hidden"
+	class="project-card relative group rounded-sm h-56 bg-slate-500 transition-transform hover:scale-[1.03] hover:shadow-lg overflow-hidden"
 	style="background-image:url({bg_url}); background-size: cover;background-position: center"
 >
 	<div

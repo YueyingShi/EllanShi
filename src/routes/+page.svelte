@@ -29,18 +29,18 @@
 </script>
 
 <Banner>
-	<div class="flex gap-4 pb-2">
-		<div class="hidden lg:block">
-			<H1>Hi, here is</H1>
+	<div class="flex gap-4 pb-2 align-bottom">
+		<div class="">
+			<H1>Hi, here is <img src="/ellanSign.svg" class="h-12 px-2 pb-1 inline" alt="Ellan sign" /></H1
+			>
 		</div>
-		<img src="/ellan_sign.png" class="h-full w-auto" alt="Ellan sign" />
 	</div>
 	<p class="text-lg md:text-xl">UX Designer /Researcher/ Web Developer</p>
 </Banner>
 
 <!-- projects  -->
 
-<div class="flex flex-col items-center mx-auto py-8 px-4 w-full max-w-6xl">
+<div class="flex         flex-col items-center mx-auto py-8 px-4 w-full max-w-6xl">
 	<ChapterHeader title="My Works" bg_title="01" />
 	<div class="flex flex-wrap gap-2">
 		{#each categories as category}
@@ -131,6 +131,6 @@
 				<Button>My Story</Button>
 			</div>
 		</div>
-		<div class="bg-gray w-full h-full"><img src="/Ellan Shi.jpg" /></div>
+		<div class="bg-gray w-full h-full"><img src="/Ellan Shi.jpg" alt="signature" /></div>
 	</div>
 </div>

@@ -2,8 +2,8 @@
 	import { Icon, Envelope } from 'svelte-hero-icons';
 </script>
 
-<footer class="bg-white py-4">
-	<div class="max-w-6xl mx-auto flex flex-col gap-2 text-slate-600">
+<footer class="bg-white">
+	<div class="max-w-6xl p-4 pb-8 mx-auto flex flex-col gap-2 text-slate-400">
 		<div class="flex flex-wrap justify-between items-center py-2">
 			<p class="">"Makes the interaction with technology as smooth as picking up my coffee mug."</p>
 
