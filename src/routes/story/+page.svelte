@@ -8,7 +8,13 @@
 <Banner>
 	<H1>
 		<span class=" mt-auto">Story of</span>
-		<span> <img src="/ellanSign.svg" class="h-16 pb-0.5 pl-4 inline" alt="Ellan sign" /></span>
+		<span>
+			<img
+				src="/ellanSign.svg"
+				class="h-12 pb-1 mb:h-16 mb:pb-0.5 pl-4 inline"
+				alt="Ellan sign"
+			/></span
+		>
 	</H1>
 	<div class="text-lg md:text-xl">Who I am, what I did and how I grew</div>
 </Banner>

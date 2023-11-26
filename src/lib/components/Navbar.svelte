@@ -1,8 +1,9 @@
 <script lang="ts">
 	let y: number = 0;
 	import { page } from '$app/stores';
-	let basic = 'font-semibold pb-1 hover:border-b-2 hover:border-gray-400 hover:text-gray-600';
-	let active = 'border-b-2 border-gray-700';
+	let basic =
+		'font-semibold pb-1 text-slate-500 hover:border-b-2 hover:border-gray-400 hover:text-gray-600';
+	let active = 'border-b-2 text-slate-900 border-gray-700';
 	console.log($page.route.id, $page.params);
 </script>
 

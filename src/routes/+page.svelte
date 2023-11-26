@@ -31,19 +31,26 @@
 <Banner>
 	<H1>
 		<span class=" mt-auto">{innerWidth > 720 ? 'Hi, here is' : 'Here is'}</span>
-		<span> <img src="/ellanSign.svg" class="h-16 pb-0.5 pl-4 inline" alt="Ellan sign" /></span>
+		<span>
+			<img
+				src="/ellanSign.svg"
+				class="h-12 pb-1 mb:h-16 mb:pb-0.5 pl-4 inline"
+				alt="Ellan sign"
+			/></span
+		>
 	</H1>
-
 	<p class="text-lg md:text-xl">UX Designer/ Researcher/ Web Developer</p>
-	<svelte:fragment slot="pic"
-		><img class="object-contain" src="/shake.gif" alt="" /></svelte:fragment
+	<svelte:fragment slot="pic">
+		<div class="flex lg:flex-1 h-96">
+			<img class="object-contain" src="/shake.gif" alt="" />
+		</div></svelte:fragment
 	>
 </Banner>
 
 <!-- projects  -->
 
 <div class="flex flex-col items-center mx-auto py-8 px-4 w-full max-w-6xl">
-	<ChapterHeader title="My Works" bg_title="01" />
+	<ChapterHeader title="My Works" bg_title="1" />
 	<div class="flex flex-wrap gap-2">
 		{#each categories as category}
 			<FilterBadge
@@ -102,7 +109,7 @@
 
 <!-- about  -->
 <div class="flex flex-col items-center mx-auto py-8 px-4 w-full max-w-6xl">
-	<ChapterHeader title="About who I am" bg_title="02" />
+	<ChapterHeader title="Who I am" bg_title="2" />
 	<div class="grid xl:grid-cols-2 gap-4">
 		<div class="flex flex-col gap-8">
 			<div class="flex flex-col gap-2">
@@ -139,10 +146,8 @@
 				<Button>My Story</Button>
 			</div>
 		</div>
-		<div class="flex justify-center bg-slate-200 max-h-[640px] pt-4 pb-0">
+		<div class="hidden lg:flex justify-center bg-slate-200 max-h-[640px] pt-4 pb-0">
 			<img class="object-contain max-h-full" src="/profile.svg" alt="profile pic" />
 		</div>
 	</div>
 </div>
-
-<svelte:window on:keydown={onKeydown} bind:innerWidth />
