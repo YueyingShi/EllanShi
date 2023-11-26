@@ -6,11 +6,11 @@
 </script>
 
 <Banner>
-	<div class="flex gap-4 pb-2">
-		<H1>The story of</H1>
-		<img src="/ellan_sign.png" class="h-full w-auto" alt="Ellan sign" />
-	</div>
-	<div class="text-lg md:text-xl">A little bit more about me</div>
+	<H1>
+		<span class=" mt-auto">Story of</span>
+		<span> <img src="/ellanSign.svg" class="h-16 pb-0.5 pl-4 inline" alt="Ellan sign" /></span>
+	</H1>
+	<div class="text-lg md:text-xl">Who I am, what I did and how I grew</div>
 </Banner>
 <!-- here is the general background information block -->
 
