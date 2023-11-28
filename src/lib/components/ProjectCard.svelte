@@ -2,7 +2,7 @@
 	import H5 from '$lib/components/atoms/headings/H5.svelte';
 	import H3 from './atoms/headings/H3.svelte';
 	import H4 from './atoms/headings/H4.svelte';
-	export let index = 1;
+
 	export let title: string = '';
 	export let description: string = '';
 	export let bg_url: string =
