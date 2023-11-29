@@ -78,7 +78,6 @@
 							<ProjectCard
 								title={project.name}
 								description={project.short_description}
-								index={i}
 								bg_url={project.coverimage}
 							/>
 						</a>
@@ -90,7 +89,6 @@
 						<ProjectCard
 							title={project.name}
 							description={project.short_description}
-							index={i}
 							bg_url={project.coverimage}
 						/>
 					</a>
