@@ -4,7 +4,7 @@
 	import ChapterHeader from '$lib/components/molecules/ChapterHeader.svelte';
 </script>
 
-<div class="flex flex-col gap-8 pr-40 text-lg pb-8">
+<div class="flex flex-col gap-8 pr-40 text pb-8">
 	<slot />
 </div>
 
