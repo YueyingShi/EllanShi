@@ -11,7 +11,7 @@
 			});
 		};
 
-		document.getElementById('scrollToTopButton').addEventListener('click', scrollToTop);
+		document.getElementById('scrollToTopButton')?.addEventListener('click', scrollToTop);
 	});
 </script>
 
