@@ -20,8 +20,6 @@
 	<div>Loading...</div>
 {:else}
 	<body class="min-h-[100vh] flex flex-col">
-		<header />
-
 		<Navbar />
 		<slot />
 		<div class="mt-auto">
