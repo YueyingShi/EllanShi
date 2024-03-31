@@ -3,6 +3,7 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { tick } from 'svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import ScrollToTopButton from '$lib/components/atoms/button/ScrollToTopButton.svelte';
 	let loading = true;
 
 	async function loadData() {
@@ -18,11 +19,14 @@
 {#if loading}
 	<div>Loading...</div>
 {:else}
-	<header />
-
-	<Navbar />
-	<slot />
-	<Footer />
+	<body class="min-h-[100vh] flex flex-col">
+		<Navbar />
+		<slot />
+		<div class="mt-auto">
+			<Footer />
+		</div>
+		<ScrollToTopButton />
+	</body>
 {/if}
 
 <style lang="postcss">

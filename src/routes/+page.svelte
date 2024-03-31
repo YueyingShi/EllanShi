@@ -15,6 +15,7 @@
 	import { fade } from 'svelte/transition';
 	import { tick } from 'svelte';
 	import ChapterHeader from '$lib/components/molecules/ChapterHeader.svelte';
+	import ScrollToTopButton from '$lib/components/atoms/button/ScrollToTopButton.svelte';
 	let loading = true;
 	let showMore = false;
 	let innerWidth = window.innerWidth;
@@ -29,28 +30,24 @@
 </script>
 
 <Banner>
-	<H1>
-		<span class=" mt-auto">{innerWidth > 720 ? 'Hi, here is' : 'Here is'}</span>
-		<span>
-			<img
-				src="/ellanSign.svg"
-				class="h-12 pb-1 mb:h-16 mb:pb-0.5 pl-4 inline"
-				alt="Ellan sign"
-			/></span
-		>
-	</H1>
-	<p class="text-lg md:text-xl">UX Designer/ Researcher/ Web Developer</p>
-	<svelte:fragment slot="pic">
+	<img src="/ellanSign.svg" class="h-12 pb-1 md:h-16 inline" alt="Ellan sign" />
+	<h1 class="text-xl md:text-3xl w-2/3 font-medium">
+		A full-stack UX designer who believes in a data-driven approach.
+	</h1>
+	<h2 class="text-xl md:text-3xl w-2/3 text-slate-300 hover:text-slate-500 font-medium">
+		With a comprehensive skill set that includes psychology, user research, and web development, my
+		goal is to translate digital world into a compelling and user-friendly story.
+	</h2>
+	<!-- <svelte:fragment slot="pic">
 		<div class="flex lg:flex-1 h-96">
 			<img class="object-contain" src="/shake.gif" alt="" />
 		</div></svelte:fragment
-	>
+	> -->
 </Banner>
 
 <!-- projects  -->
 
-<div class="flex flex-col items-center mx-auto py-8 px-4 w-full max-w-6xl">
-	<ChapterHeader title="My Works" bg_title="1" />
+<div class="flex flex-col items-center mx-auto py-8 px-4 w-full min-h-full max-w-6xl">
 	<div class="flex flex-wrap gap-2">
 		{#each categories as category}
 			<FilterBadge
@@ -64,27 +61,15 @@
 		{/each}
 	</div>
 
-	<div id="projects" class=" mt-4 w-full gap-4 grid xl:grid-cols-2">
+	<div id="projects" class="flex-1 mt-4 w-full gap-x-4 gap-y-8 grid xl:grid-cols-2">
 		{#each projects as project, i}
-			{#if selected === 'All'}
-				{#if loading}
-					'projects'
-				{:else}
-					<div transition:fade={{ delay: i * 100, duration: 300 }}>
-						<a
-							href="/{project?.prop ? project.prop : 'notfound'}"
-							class={!showMore && i > 5 ? 'hidden' : ''}
-						>
-							<ProjectCard
-								title={project.name}
-								description={project.short_description}
-								bg_url={project.coverimage}
-							/>
-						</a>
-					</div>
-				{/if}
+			{#if loading}
+				'projects'
 			{:else}
-				<div class="{project.keywords?.includes(selected) ? '' : 'hidden'} transition-all">
+				<div
+					class={selected === 'All' ? ' ' : project.keywords?.includes(selected) ? '' : 'hidden'}
+					transition:fade={{ delay: i * 100, duration: 300 }}
+				>
 					<a href="/{project?.prop ? project.prop : 'notfound'}">
 						<ProjectCard
 							title={project.name}
@@ -95,57 +80,5 @@
 				</div>
 			{/if}
 		{/each}
-	</div>
-	<div
-		class="{selected === 'All' && !showMore ? '-mt-2' : 'mt-6'} {selected === 'All'
-			? ''
-			: 'opacity-0'}"
-	>
-		<Button on:click={() => (showMore = !showMore)}>{showMore ? 'Show Less' : 'Show More'}</Button>
-	</div>
-</div>
-
-<!-- about  -->
-<div class="flex flex-col items-center mx-auto py-8 px-4 w-full max-w-6xl">
-	<ChapterHeader title="Who I am" bg_title="2" />
-	<div class="grid xl:grid-cols-2 gap-4">
-		<div class="flex flex-col gap-8">
-			<div class="flex flex-col gap-2">
-				<H5>My Principle: Data-driven & User-centric</H5>
-				<p>
-					In the design world, I advocate for the integration of data-driven insights and
-					user-centric strategies. Analyzing user feedback and behavior empowers designers to craft
-					solutions that are not just visually appealing but also functionally effective, addressing
-					real user challenges.
-				</p>
-			</div>
-			<div class="flex flex-col gap-2">
-				<H5>My Philosophy: Design Empowered by Tech</H5>
-				<p>
-					As a designer, I'm dedicated to unraveling technology's intricacies, not treating it as a
-					black box. I firmly believe that a designer's ability to enhance user experiences thrives
-					on a deep understanding of technology. Explaining a black box becomes challenging when
-					you're in the dark about its inner workings.
-				</p>
-			</div>
-
-			<div class="flex flex-col gap-2">
-				<H5>My Ambition: Cross-media Cross-senses Interaction</H5>
-				<p>
-					I dedicate myself to crafting experiences that seamlessly blend the digital and human
-					realms. My ambition is to create subtly impressive, cross-sensory encounters that
-					captivate without overwhelming.
-				</p>
-			</div>
-
-			<p>Let's redefine the boundaries of design!</p>
-
-			<div>
-				<Button>My Story</Button>
-			</div>
-		</div>
-		<div class="hidden lg:flex justify-center bg-slate-200 max-h-[640px] pt-4 pb-0">
-			<img class="object-contain max-h-full" src="/profile.svg" alt="profile pic" />
-		</div>
 	</div>
 </div>

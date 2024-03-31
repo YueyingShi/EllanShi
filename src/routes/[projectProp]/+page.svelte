@@ -20,9 +20,10 @@
 
 {#if current_project?.component}
 	<Banner>
-		<H1>{current_project?.name}</H1>
-		<div>{current_project?.short_description}</div>
-		<div>here should be some budgets for the field</div>
+		<h1 class="text-xl md:text-4xl w-2/3 font-medium">{current_project?.name}</h1>
+		<p class="text-xl md:text-2xl w-2/3 font-medium text-slate-300">
+			{current_project?.short_description}
+		</p>
 	</Banner>
 	<!-- here is the general background information block -->
 
