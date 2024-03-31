@@ -29,22 +29,22 @@
 
 	<div class="max-w-6xl my-6 px-4 mx-auto">
 		<div class=" mt-8 mb-16 grid gap-4 lg:grid-cols-2">
-			<div class="flex flex-col gap-2">
+			<div class="flex flex-col gap-2 text-gray-700">
 				<H3>Background</H3>
 				<div class="flex gap-2">
-					<p class="text-slate-600 w-24 flex-none">Date</p>
+					<p class="text-slate-400 w-24 flex-none">Date</p>
 					<p class="flex-1">{current_project?.background?.date}</p>
 				</div>
 				<div class="flex gap-2">
-					<p class="text-slate-600 w-24 flex-none">Location</p>
+					<p class="text-slate-400 w-24 flex-none">Location</p>
 					<p class="flex-1">{current_project?.background?.location}</p>
 				</div>
 				<div class="flex gap-2">
-					<p class="text-slate-600 w-24 flex-none">Project</p>
+					<p class="text-slate-400 w-24 flex-none">Project</p>
 					<p class="flex-1">{current_project?.background?.project}</p>
 				</div>
 				<div class="flex gap-2">
-					<p class="text-slate-600 w-24 flex-none">Team</p>
+					<p class="text-slate-400 w-24 flex-none">Team</p>
 					<p class="flex-1">{current_project?.background?.team}</p>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 				<H3>Brief</H3>
 				{#if current_project?.introduction}
 					{#each current_project.introduction as p}
-						<p class="text-slate-600">{p}</p>
+						<p class="text-gray-700">{p}</p>
 					{/each}
 				{/if}
 			</div>
