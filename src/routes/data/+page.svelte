@@ -1,10 +1,16 @@
-<script>
+<script lang="ts">
 	import ProjectDataRow from './ProjectDataRow.svelte';
 	import { supabase } from '$lib/supabaseClient';
 	import { onMount } from 'svelte';
 	import { user } from '$lib/stores.js';
-	let projects = [];
+	let projects: any = [];
 	let newProject = { title: '', description: '' };
+
+	function sortProject() {
+		projects.sort((a, b) => {
+			return a.id - b.id;
+		});
+	}
 
 	async function updateProject(project) {
 		try {
@@ -44,6 +50,7 @@
 		try {
 			const { data } = await supabase.from('projects').select();
 			projects = data;
+			sortProject();
 		} catch (err) {
 			console.log(err);
 		}
@@ -57,25 +64,41 @@
 
 <p>Welcome {$user?.email ? $user.email : ''}</p>
 
-<div>
-	<p>add project</p>
-	<input type="text" bind:value={newProject.title} />
-	<input type="text" bind:value={newProject.description} />
-	<button
-		on:click={() => {
-			addProject();
-		}}>Add</button
-	>
-</div>
-
-<div class="flex flex-col gap-4">
-	<div class="flex">
-		<p>Project Title</p>
-		<p>Main project</p>
+<div class="flex flex-col max-w-6xl my-6 mx-auto gap-4">
+	<div class="w-full">
+		<p>add project</p>
+		<input type="text" placeholder="title" bind:value={newProject.title} />
+		<input type="text" placeholder="description" bind:value={newProject.description} />
+		<button
+			class="p-2 border rounded"
+			on:click={() => {
+				addProject();
+			}}>Add</button
+		>
 	</div>
-	{#each projects as project}
-		<ProjectDataRow {project} {updateProject} {deleteProject} />
-	{:else}
-		<p>No projects</p>
-	{/each}
+
+	<div
+		class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg sm:min-w-[720px]"
+	>
+		<table class="w-full divide-y divide-gray-300">
+			<thead class="bg-gray-50 text-left">
+				<tr>
+					<th class="p-2"> ID </th>
+					<th class="p-2"> Title </th>
+					<th class="p-2"> Description </th>
+
+					<th class="p-2"> Emphasis? </th>
+					<th class="p-2"> Delete? </th>
+				</tr>
+			</thead>
+
+			<tbody class="divide-y divide-gray-200 bg-white">
+				{#each projects as project}
+					<tr>
+						<ProjectDataRow {project} {updateProject} {deleteProject} />
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
 </div>

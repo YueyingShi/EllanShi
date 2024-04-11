@@ -1,17 +1,25 @@
-<script>
-	export let project, updateProject, deleteProject;
+<script lang="ts">
+	export let project: any, updateProject: any, deleteProject: any;
 </script>
 
-<div class="flex gap-2">
+<td class="p-2">
+	{project.id}
+</td>
+<td class="p-2">
 	<input
 		type="text"
 		value={project.title}
-		on:input={(e) => {
+		on:blur={(e) => {
 			project.title = e.currentTarget.value;
 			updateProject(project);
 		}}
 		class="border-2 border-gray-300 rounded px-1"
 	/>
+</td>
+<td class="p-2">
+	{project.description}
+</td>
+<td class="p-2">
 	<input
 		type="checkbox"
 		name=""
@@ -22,9 +30,12 @@
 			updateProject(project);
 		}}
 	/>{project.isEmphasis}
+</td>
+<td class="p-2">
 	<button
+		class="p-2 border rounded"
 		on:click={() => {
 			deleteProject(project);
 		}}>Delete</button
 	>
-</div>
+</td>
