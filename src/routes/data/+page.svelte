@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProjectDataRow from './ProjectDataRow.svelte';
+	import ProjectDataRow from '../../lib/components/molecules/ProjectDataRow.svelte';
 	import { supabase } from '$lib/supabaseClient';
 	import { onMount } from 'svelte';
 	import { user } from '$lib/stores.js';
@@ -7,12 +7,12 @@
 	let newProject = { title: '', description: '' };
 
 	function sortProject() {
-		projects.sort((a, b) => {
+		projects.sort((a: any, b: any) => {
 			return a.id - b.id;
 		});
 	}
 
-	async function updateProject(project) {
+	async function updateProject(project: any) {
 		try {
 			const { data, error } = await supabase
 				.from('projects')

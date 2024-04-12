@@ -1,8 +1,9 @@
 <script lang="ts">
 	/** @type {import('./$types').PageData} */
-	import projects from '$lib/json/projects.json';
-	import H1 from '$lib/components/atoms/headings/H1.svelte';
-	import H4 from '$lib/components/atoms/headings/H4.svelte';
+	import { supabase } from '$lib/supabaseClient';
+	import { onMount } from 'svelte';
+	let projects: any = [];
+
 	import BestRoommate from '$lib/projects/BestRoommate.svelte';
 	import WithU from '$lib/projects/WithU.svelte';
 	import H3 from '$lib/components/atoms/headings/H3.svelte';
@@ -13,16 +14,29 @@
 	import H2 from '$lib/components/atoms/headings/H2.svelte';
 	import Button from '$lib/components/atoms/button/Button.svelte';
 	import { Icon } from 'svelte-hero-icons';
-	export let data;
-	let current_project = projects.find((e) => e.prop === data.prop);
+	import { page } from '$app/stores';
+
+	let current_project: any;
 	let components: { [key: string]: any } = { Rasch, EDucate, YIUI, WithU };
+	async function getAllProjects() {
+		try {
+			const { data } = await supabase.from('projects').select();
+			projects = data;
+		} catch (err) {
+			console.log(err);
+		}
+	}
+	onMount(async () => {
+		await getAllProjects();
+		current_project = projects.find((e) => e.prop === $page.params.projectProp);
+	});
 </script>
 
-{#if current_project?.component}
+{#if current_project?.content_component}
 	<Banner>
-		<h1 class="text-xl md:text-4xl w-2/3 font-medium">{current_project?.name}</h1>
+		<h1 class="text-xl md:text-4xl w-2/3 font-medium">{current_project?.title}</h1>
 		<p class="text-xl md:text-2xl w-2/3 font-medium text-slate-300">
-			{current_project?.short_description}
+			{current_project?.description}
 		</p>
 	</Banner>
 	<!-- here is the general background information block -->
@@ -33,34 +47,33 @@
 				<H3>Background</H3>
 				<div class="flex gap-2">
 					<p class="text-slate-400 w-24 flex-none">Date</p>
-					<p class="flex-1">{current_project?.background?.date}</p>
+					<p class="flex-1">{current_project?.date}</p>
 				</div>
 				<div class="flex gap-2">
 					<p class="text-slate-400 w-24 flex-none">Location</p>
-					<p class="flex-1">{current_project?.background?.location}</p>
+					<p class="flex-1">{current_project?.location}</p>
 				</div>
 				<div class="flex gap-2">
 					<p class="text-slate-400 w-24 flex-none">Project</p>
-					<p class="flex-1">{current_project?.background?.project}</p>
+					<p class="flex-1">{current_project?.project ?? '--'}</p>
 				</div>
 				<div class="flex gap-2">
 					<p class="text-slate-400 w-24 flex-none">Team</p>
-					<p class="flex-1">{current_project?.background?.team}</p>
+					<p class="flex-1">{current_project?.team ?? '--'}</p>
 				</div>
 			</div>
 			<div class="flex flex-col gap-2">
 				<H3>Brief</H3>
-				{#if current_project?.introduction}
+				<p class="text-gray-700">{current_project?.introduction ?? '--'}</p>
+				<!-- {#if current_project?.introduction}
 					{#each current_project.introduction as p}
 						<p class="text-gray-700">{p}</p>
 					{/each}
-				{/if}
+				{/if} -->
 			</div>
 		</div>
 
-		<svelte:component
-			this={components[current_project.component ? current_project.component : 'WithU']}
-		/>
+		<svelte:component this={components[current_project.content_component ?? 'WithU']} />
 	</div>
 {:else}
 	<div class=" max-w-6xl min-h-[80vh] mx-auto flex flex-col justify-center gap-8">
