@@ -11,7 +11,6 @@
 		await tick();
 		// Set loading to false
 		loading = false;
-		console.log('loaded');
 	}
 	loadData();
 </script>

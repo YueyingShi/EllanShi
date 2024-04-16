@@ -59,10 +59,7 @@
 	onMount(async () => {
 		await getAllProjects();
 	});
-	$: console.log($user.email);
 </script>
-
-<p>Welcome {$user?.email ? $user.email : ''}</p>
 
 <div class="flex flex-col max-w-6xl my-6 mx-auto gap-4">
 	<div class="w-full">

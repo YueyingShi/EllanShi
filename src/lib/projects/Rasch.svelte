@@ -1,4 +1,6 @@
 <script>
+	import TOC from './TOC.svelte';
+
 	import ThreeCols from '$lib/components/molecules/ThreeCols.svelte';
 	import H4 from '$lib/components/atoms/headings/H4.svelte';
 	import H5 from '$lib/components/atoms/headings/H5.svelte';
@@ -12,13 +14,7 @@
 </script>
 
 <div class="flex gap-12">
-	<div class="sticky top-0 h-64 w-40 pt-24">
-		<div class=" w-full flex flex-col gap-4 list-decimal">
-			{#each ['Abstract', 'Introduction', 'Methods', 'Result', 'Discussion', 'Conclusion'] as chapter}
-				<a href="#{chapter}" class="list-item text-slate-400 hover:text-slate-800">{chapter}</a>
-			{/each}
-		</div>
-	</div>
+	<TOC chapters={['Abstract', 'Introduction', 'Methods', 'Result', 'Discussion', 'Conclusion']} />
 
 	<div class="max-w-4xl">
 		<!-- Abstract -->
@@ -80,7 +76,7 @@
 				Traditionally, three approaches are employed: self-reports, behavioral observations, and
 				physiological measures.
 			</p>
-		
+
 			<ThreeCols>
 				<ThreeColsItem title="Self-reports">
 					<svelte:fragment slot="icon">
