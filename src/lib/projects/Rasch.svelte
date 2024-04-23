@@ -14,7 +14,7 @@
 <div class="max-w-4xl">
 	<!-- Abstract -->
 	<Chapter id="Abstract">
-		<ChapterHeader title="Abstract" bg_title="00" />
+		<ChapterHeader bg_title="00">Abstract</ChapterHeader>
 
 		<p>
 			Nowadays, the usage of virtual environments (VE) is growing rapidly in many areas, such as
@@ -33,7 +33,7 @@
 
 	<!-- Introduction -->
 	<Chapter id="Introduction">
-		<ChapterHeader title="Introduction" bg_title="01" />
+		<ChapterHeader bg_title="01">Introduction</ChapterHeader>
 		<H4>Presence is, illusion of non-mediation</H4>
 		<p>
 			The fast-paced advancements in virtual technology, networks, and computing power contribute to
@@ -213,7 +213,7 @@
 	</Chapter>
 	<!-- Methods -->
 	<Chapter id="Methods">
-		<ChapterHeader title="Methods" bg_title="02" />
+		<ChapterHeader bg_title="02">Methods</ChapterHeader>
 		<!-- subchapter  -->
 
 		<H4>Participants</H4>
@@ -305,7 +305,7 @@
 
 	<!-- Result -->
 	<Chapter id="Result">
-		<ChapterHeader title="Result" bg_title="03" />
+		<ChapterHeader bg_title="03">Result</ChapterHeader>
 		<!-- subchapter  -->
 
 		<H4>Rasch Analysis for Pit VE</H4>
@@ -319,7 +319,7 @@
 
 	<!-- Discussion -->
 	<Chapter id="Discussion">
-		<ChapterHeader title="Discussion" bg_title="04" />
+		<ChapterHeader bg_title="04">Discussion</ChapterHeader>
 		<!-- subchapter  -->
 
 		<H4
@@ -332,7 +332,7 @@
 
 	<!-- Conclusion -->
 	<Chapter id="Conclusion">
-		<ChapterHeader title="Conclusion" bg_title="05" />
+		<ChapterHeader bg_title="05">Conclusion</ChapterHeader>
 		<!-- subchapter  -->
 		<div class="flex flex-col gap-4" />
 	</Chapter>
