@@ -8,6 +8,8 @@
 	import WithU from '$lib/projects/WithU.svelte';
 	import H3 from '$lib/components/atoms/headings/H3.svelte';
 	import Banner from '$lib/components/Banner.svelte';
+	import TOC from '$lib/components/TOC.svelte';
+
 	import Rasch from '$lib/projects/Rasch.svelte';
 	import EDucate from '$lib/projects/EDucate.svelte';
 	import YIUI from '$lib/projects/YIUI.svelte';
@@ -72,8 +74,17 @@
 				{/if} -->
 			</div>
 		</div>
-
-		<svelte:component this={components[current_project.content_component ?? 'WithU']} />
+		<div class="flex gap-12">
+			<TOC
+				chapters={current_project.content ?? [
+					'Problem Define',
+					'Research',
+					'Solutions',
+					'Conclusion'
+				]}
+			/>
+			<svelte:component this={components[current_project.content_component ?? 'WithU']} />
+		</div>
 	</div>
 {:else}
 	<div class=" max-w-6xl min-h-[80vh] mx-auto flex flex-col justify-center gap-8">
