@@ -295,12 +295,97 @@
 			<li>a self-report questionnaire.</li>
 		</ul>
 		<div class="flex gap-4 py-4">
-			<img src="/projectimg/rasch/10.svg" class="px-4 py-2 bg-white" />
+			<img src="/projectimg/rasch/10.svg" alt="" class="px-4 py-2 bg-white" />
 		</div>
 		<Divider />
 		<H4>Measurement</H4>
+		<p>
+			Two primary tools are employed for gauging presence: the proposed Rasch-based approach and the
+			IPQ questionnaire. In each virtual environment (VE), the Rasch-based instrument encompasses 20
+			indicators, comprising questionnaires, behavioral, and physiological measures specifically for
+			the pit VE.
+		</p>
+		<p>
+			Among the indicators, eight indicators within each subset are common items, while the
+			remaining 12 items are unique to each VE (refer to Table 1 and Table 2). These common items
+			serve to establish a linkage between the two studies. Notably, the indicators utilized in the
+			pit environment draw from the framework outlined by Haans and IJsselsteijn (2018). Moreover,
+			careful consideration was given to ensuring comparability between the indicators employed in
+			the street environment and those in the pit VE. Data handling adhered meticulously to
+			university guidelines and General Data Protection Regulation (GDPR) standards.
+		</p>
+
+		<img src="/projectimg/rasch/11.svg" alt="" class="px-4 py-2 bg-white" />
+		<p>
+			Self-reported data were collected through a digital questionnaire on the laboratory computer
+			(Appendix B). Participants could only select yes or no as an answer, which was coded as 1 and
+			0. Participant-selected answers were automatically converted to CSV files with one row of
+			responses per participant and one column of responses per item.
+		</p>
+
+		<img src="/projectimg/rasch/12.png" alt="" class="px-4 py-2 bg-white" />
+		<p>
+			The behavioral data was divided into two parts: behavioral observation and behavioral duration
+			measurement. Behavioral observation data were collected from a camera and screen recordings.
+			During the subject's VR experience, the external camera captured a full view of the lab.
+		</p>
+		<p>
+			For example, for item 17 in the pit VE, observation from the video showed whether the
+			participant had squatted, bowed his head, etc. If the participant's reflection matched the
+			item, the response of this item was recorded as 1, and vice versa as 0. The response to item
+			20 in the pit VE was also judged based on the video. The screen recordings were focused on the
+			VIVE headset view of the participant. The subject's responses to items 15 to 20 in the street
+			environment were evaluated based on the screen recording. For example, item 17 investigated
+			whether the participant looked left and right before crossing the street. As the VIVE headset
+			view was head-tracking thus, the head movements could be directly inferred from the headset
+			view. If the participants were performing a behavior that matches the item, the responses were
+			recorded as 1, and vice versa as 0.
+		</p>
+		<p>
+			The behavioral duration measurement was only for item 18 in the pit VE. A timer was started
+			when the command to fall into the pit was given, and the timer was stopped when the
+			participants pressed the key to fall into the pit. Compared to the median response time, the
+			responses using more time were coded as 1, and the responses using less time were coded as 0.
+		</p>
+
+		<img src="/projectimg/rasch/13.png" alt="" class="px-4 py-2 bg-white" />
+		<p>
+			Mobi8 utilizes Galvanic Skin Response (GSR) data to examine participant arousal in the pit
+			room environment. The raw GSR data are normalized to account for individual differences by
+			establishing baseline GSR levels. Prior to the VR experience, participants watch a calming
+			video to establish their relative minimum GSR values. After the VR session, a balloon task is
+			used to elicit maximum GSR values, known to induce arousal. With individual baseline GSR
+			levels established, the normalized GSR response to the door-open event is calculated.
+		</p>
+		<img src="/projectimg/rasch/14.svg" alt="" class="px-4 py-2 bg-white" />
+		<p>
+			The IPQ questionnaire, a 7-point scale with 14 items measuring spatial presence, involvement,
+			and experience realism, is employed alongside the Rasch-based method for presence measurement.
+			Data from both tools are collected through digital questionnaires, with the correlation
+			between them indicating convergent validity for the Rasch-based approach.
+		</p>
 		<Divider />
 		<H4>Data Preparation and Analysis</H4>
+		<p>
+			Data Preparation: Data preparation encompassed self-report questionnaire input into Winsteps
+			for analysis, behavioral item coding via video and screen recordings review, and GSR data
+			cleanup and estimation using MATLAB R2021a. The GSR data preparation involved down-sampling
+			and smoothing in LedaLab, artifact removal, decomposition into tonic and phasic data, and
+			calculation of standardized stimulus response based on maximum and minimum GSR values obtained
+			from baseline events.
+		</p>
+		<p>
+			Data Analysis: Data analysis was conducted using Winsteps and STATA/IC 16.1, following a
+			stepwise approach aligned with research questions. Initial Rasch analysis was performed
+			separately for each VE, focusing on Item Fit Statistics to assess item adequacy within the
+			Rasch model. Items with INFIT and OUTFIT mean-square statistics between 0.5 and 1.5 were
+			deemed valuable, while those between 1.5 and 2.0 were considered unhelpful but not detrimental
+			to measurement structure. Items with statistics exceeding 2.0 were flagged for potential
+			removal due to their impact on measurement distortion. Further analysis identified common
+			items with sufficient fit for subsequent comparison between VEs, identifying biases and
+			ensuring stability for scale equations. Anchor items were selected, and the linking quality of
+			the scale equation was assessed to ensure reliability.
+		</p>
 	</Chapter>
 
 	<!-- Result -->
@@ -308,26 +393,118 @@
 		<ChapterHeader bg_title="03">Result</ChapterHeader>
 		<!-- subchapter  -->
 
+		<img src="/projectimg/rasch/15.svg" alt="" class="px-4 py-2 bg-white" />
+		<img src="/projectimg/rasch/16.svg" alt="" class="px-4 py-2 bg-white" />
+
 		<H4>Rasch Analysis for Pit VE</H4>
 		<H4>Rasch Analysis for Street VE</H4>
 		<H4>Compare Analysis</H4>
+		<p>
+			The research aimed to compare two studies despite using different subsets of items, requiring
+			data integration into a single scale via scale equations for comparison. To assess the
+			invariance of common items, a scatter plot was generated between item sets from different
+			virtual environments (VEs). The low correlation coefficient (0.16) indicated significant
+			differences in item difficulties between VEs. For instance, item 1, regarding the feeling of
+			extending one's arm to touch objects in the virtual environment, exhibited substantial bias,
+			being much easier in the pit VE compared to the street VE. This bias likely stems from
+			differences in the everyday interaction with objects in each VE; participants in the pit VE
+			commonly interacted with various objects, while those in the street VE did so less frequently.
+			Thus, item responses were influenced by VE content.
+		</p>
+		<img src="/projectimg/rasch/17a.png" alt="" class="px-4 py-2 bg-white" />
+		<img src="/projectimg/rasch/17b.png" alt="" class="px-4 py-2 bg-white" />
+		<img src="/projectimg/rasch/17c.png" alt="" class="px-4 py-2 bg-white" />
 		<H4>Scale Equation</H4>
-		<H4>Measurement</H4>
+		<p>
+			The equating process aimed to merge measures from different studies into a common scale using
+			five chosen anchor items. Similar to converting Fahrenheit to Celsius, two anchor points were
+			selected in both instruments (items 2, 3, 4, 7, and 8). A concurrent analysis by Winsteps was
+			conducted, and the correlation between subsets of common items was sufficiently close to 1,
+			obviating the need for correlation analysis for systematic differences between the studies.
+			After equating, the linking quality between the two studies was assessed using fit indices
+			recommended by Wright and Bell (1984). One such index, the item-within-link fit statistic,
+			evaluated how well linking items demonstrated adequate fit within the two forms. In the study,
+			the 𝑡𝐼𝑊𝐿 value of 1.90 indicated adequate item-within-link fit, as it was less than the
+			criterion value of 2.00.
+		</p>
+		<img src="/projectimg/rasch/18.svg" alt="" class="px-4 py-2 bg-white" />
+		<p>
+			The item-between-link fit statistic assesses the stability of calibrated items across
+			different forms. Common items, serving as anchors for merging measures into one scale, are
+			expected to be invariant between forms. After conducting comparison analysis and removing
+			misfit and biased items, the remaining common items are anticipated to exhibit adequate
+			invariance in both the pit VE and street VE. The formula proposed by Wolfe (2020) calculates
+			the item-between-link fit statistic, with 𝜒2 𝐼𝐵𝐿 distributed approximately as 𝜒2 with 𝐿 − 1
+			degrees of freedom. The calculated 𝜒2 𝐼𝐵𝐿 value of 4.24 falls within the 95% confidence
+			interval for 𝜒2 with 5 degrees of freedom (0 to 9.46), indicating adequate item-between-link
+			fit.
+		</p>
+		<img src="/projectimg/rasch/19.svg" alt="" class="px-4 py-2 bg-white" />
+		<p>
+			With sufficient link quality between pit VE and street VE, it would be able to run a t-test on
+			the presence ability between the participants in two VEs.
+		</p>
 		<H4>Presence Different Between VEs</H4>
+		<p>
+			When the two scales have been equated, and the estimates for the two participant groups have
+			been placed on a single scale, whether participants in the two different VEs experienced
+			different levels of presence were tested. A t-test was considered an appropriate method to
+			compare the mean difference in the ability of two VEs to elicit a sense of presence. Before
+			the significant test, descriptive statistics for the person ability scale were calculated
+			(Table 6). There was no significant difference between the two environments. With t(80)=-1.85,
+			p = 0.07 > 0.05, we could not reject the null hypothesis that the two environments are equally
+			capable of eliciting a sense of presence.
+		</p>
+		<img src="/projectimg/rasch/20.png" alt="" class="px-4 py-2 bg-white" />
 		<H4>Correlation With IPQ</H4>
+		<p>
+			Pairwise correlations were calculated for Rasch person estimation, three IPQ dimensions
+			(spatial presence, involvement, realism), and the single general presence item. Scale
+			reliabilities were examined for both Rasch-based and IPQ measures, yielding a person
+			measurement reliability of 0.63 for Rasch and Cronbach's α values of 0.64 for spatial
+			presence, 0.63 for involvement, and 0.62 for realism in IPQ dimensions. Pearson correlations
+			between Rasch-based approach and IPQ dimensions were then estimated, accounting for low
+			measure reliabilities by correcting for measurement error attenuation. The corrected
+			correlations were moderate to high (r ≥ 0.46) between Rasch and IPQ dimensions. Additionally,
+			the general presence item correlated significantly with all IPQ dimensions and the Rasch
+			model, suggesting overlap in individual differences captured by Rasch-based and IPQ measures.
+		</p>
+		<img src="/projectimg/rasch/21.svg" alt="" class="px-4 py-2 bg-white" />
+		<img src="/projectimg/rasch/22.png" alt="" class="px-4 py-2 bg-white" />
 	</Chapter>
 
 	<!-- Discussion -->
 	<Chapter id="Discussion">
 		<ChapterHeader bg_title="04">Discussion</ChapterHeader>
-		<!-- subchapter  -->
 
-		<H4
-			>Measuring Presence with Self-Reports, Behavioral Observations and Physiological Measures as
-			Indicators</H4
-		>
-		<H4>Convergent validity</H4>
-		<H4>limitation and Future Works</H4>
+		<H4>1. Introduction to Rasch-Based Approach for Presence Measurement</H4>
+		<p>
+			The study introduces the Rasch-based approach developed by Haans and IJsselsteijn (2018) for
+			measuring presence in virtual environments (VEs). It outlines research objectives, including
+			expanding the existing item bank, validating presence indicators, and exploring comparability
+			between studies.
+		</p>
+		<H4>2. Expansion of Presence Measurement Indicators</H4>
+		<p>
+			The research aims to broaden the existing item bank by proposing and testing additional
+			indicators to measure presence. It validates self-report, behavioral, and physiological
+			measures as indicators, allowing researchers to select tailored subsets for their VE
+			experiments.
+		</p>
+		<H4>3. Comparability Between Studies Using Scale Equations</H4>
+		<p>
+			The study demonstrates the potential for comparing presence levels between different VEs
+			through scale equations. By conducting a between-subject study with varied VE conditions and
+			indicator subsets, it aims to validate comparability on the same scale, despite differences in
+			indicators used.
+		</p>
+		<H4>4. Exploration of Convergent Validity with IPQ Instrument</H4>
+		<p>
+			The study examines convergent validity between the Rasch-based approach and the commonly used
+			IPQ instrument. It analyzes correlations between presence measurements obtained from both
+			methods, highlighting similarities and differences in constructs and providing insights into
+			the effectiveness of the Rasch-based approach.
+		</p>
 	</Chapter>
 
 	<!-- Conclusion -->
