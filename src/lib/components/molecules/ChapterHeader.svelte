@@ -4,7 +4,7 @@
 	export let extraClass = '';
 </script>
 
-<div class=" h-20 w-full mt-8 {extraClass}">
+<div class=" h-20 w-full {extraClass}">
 	<a {href} class="relative flex flex-col items-center">
 		<p class="w-full font-semibold italic text-7xl text-center text-slate-200">
 			{bg_title.toUpperCase()}

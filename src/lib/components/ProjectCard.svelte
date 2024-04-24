@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="project-card relative group h-56 bg-slate-500 transition-all overflow-hidden hover:rounded-[160px]"
+	class="project-card relative group h-56 bg-slate-500 transition-all duration-300 overflow-hidden hover:rounded-[160px]"
 	style="background-image:url({bg_url}); background-size: cover;background-position: center"
 />
 <div class="py-3">

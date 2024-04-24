@@ -17,9 +17,20 @@
 	import WayFinding from '$lib/projects/WayFinding.svelte';
 	import WithU from '$lib/projects/WithU.svelte';
 	import YIUI from '$lib/projects/YIUI.svelte';
-	import Sugar from '$lib/projects/YIUI.svelte';
+	import Sugar from '$lib/projects/Sugar.svelte';
+	import USVote from '$lib/projects/USVote.svelte';
 
-	let components: any = { Rasch, WithU, Roommate, YIUI, WayFinding, EClass, FoodTinder, Sugar };
+	let components: any = {
+		Rasch,
+		WithU,
+		Roommate,
+		YIUI,
+		WayFinding,
+		EClass,
+		FoodTinder,
+		Sugar,
+		USVote
+	};
 	import { page } from '$app/stores';
 
 	let current_project: any;
@@ -39,9 +50,9 @@
 </script>
 
 {#if current_project?.content_component}
-	<Banner>
+	<Banner imageUrl={current_project.cover_image ?? ''}>
 		<h1 class="text-xl md:text-4xl w-2/3 font-medium">{current_project?.title}</h1>
-		<p class="text-xl md:text-2xl w-2/3 font-medium text-slate-300">
+		<p class="text-xl md:text-2xl w-2/3 font-medium opacity-50 hover:opacity-75">
 			{current_project?.description}
 		</p>
 	</Banner>
@@ -50,7 +61,9 @@
 	<div class="max-w-6xl my-6 px-4 mx-auto">
 		<Overview {current_project} />
 		<div class="flex gap-12">
-			<TOC chapters={current_project.content ?? []} />
+			<div class="">
+				<TOC chapters={current_project.content ?? []} />
+			</div>
 			<!-- <svelte:component this={components[current_project.content_component ?? 'WithU']} /> -->
 			<svelte:component this={components[current_project.content_component]} />
 		</div>

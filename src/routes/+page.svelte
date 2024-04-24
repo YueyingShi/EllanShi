@@ -36,7 +36,7 @@
 	<h1 class="text-xl md:text-3xl w-2/3 font-medium">
 		A full-stack UX designer who believes in a data-driven approach.
 	</h1>
-	<h2 class="text-xl md:text-3xl w-2/3 text-slate-300 hover:text-slate-500 font-medium">
+	<h2 class="text-xl md:text-3xl w-2/3 opacity-25 hover:opacity-50 font-medium">
 		With a comprehensive skill set that includes psychology, user research, and web development, my
 		goal is to translate digital world into a compelling and user-friendly story.
 	</h2>
