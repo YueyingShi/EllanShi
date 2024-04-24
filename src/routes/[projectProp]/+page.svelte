@@ -17,8 +17,9 @@
 	import WayFinding from '$lib/projects/WayFinding.svelte';
 	import WithU from '$lib/projects/WithU.svelte';
 	import YIUI from '$lib/projects/YIUI.svelte';
+	import Sugar from '$lib/projects/YIUI.svelte';
 
-	let components: any = { Rasch, WithU, Roommate, YIUI, WayFinding, EClass, FoodTinder };
+	let components: any = { Rasch, WithU, Roommate, YIUI, WayFinding, EClass, FoodTinder, Sugar };
 	import { page } from '$app/stores';
 
 	let current_project: any;
@@ -49,14 +50,7 @@
 	<div class="max-w-6xl my-6 px-4 mx-auto">
 		<Overview {current_project} />
 		<div class="flex gap-12">
-			<TOC
-				chapters={current_project.content ?? [
-					'Problem Define',
-					'Research',
-					'Solutions',
-					'Conclusion'
-				]}
-			/>
+			<TOC chapters={current_project.content ?? []} />
 			<!-- <svelte:component this={components[current_project.content_component ?? 'WithU']} /> -->
 			<svelte:component this={components[current_project.content_component]} />
 		</div>

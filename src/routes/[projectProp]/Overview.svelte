@@ -15,12 +15,8 @@
 			<p class="flex-1">{current_project?.location}</p>
 		</div>
 		<div class="flex gap-2">
-			<p class="text-slate-400 w-24 flex-none">Project</p>
-			<p class="flex-1">{current_project?.project ?? '--'}</p>
-		</div>
-		<div class="flex gap-2">
-			<p class="text-slate-400 w-24 flex-none">Team</p>
-			<p class="flex-1">{current_project?.team ?? '--'}</p>
+			<p class="text-slate-400 w-24 flex-none">My Role</p>
+			<p class="flex-1">{current_project?.role ?? '--'}</p>
 		</div>
 	</div>
 	<div class="flex flex-col gap-2">
