@@ -8,7 +8,11 @@
 	class="flex flex-col w-full min-h-[50vh] lg:h-96 overflow-hidden bg-slate-100 justify-center items-center"
 >
 	{#if imageUrl}
-		<img class="w-full object-cover blur-md opacity-30" src={imageUrl} alt="Banner" />
+		<img
+			class="min-w-full min-h-[50vh] lg:min-h-full object-cover blur-md opacity-30"
+			src={imageUrl}
+			alt="Banner"
+		/>
 	{/if}
 
 	<div

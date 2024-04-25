@@ -61,7 +61,7 @@
 	<div class="max-w-6xl my-6 px-4 mx-auto">
 		<Overview {current_project} />
 		<div class="flex gap-12">
-			<div class="">
+			<div class="hidden lg:block">
 				<TOC chapters={current_project.content ?? []} />
 			</div>
 			<!-- <svelte:component this={components[current_project.content_component ?? 'WithU']} /> -->

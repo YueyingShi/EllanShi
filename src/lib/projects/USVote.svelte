@@ -5,8 +5,7 @@
 
 <Chapter>
 	<iframe
-		width="960"
-		height="640"
+		class=" w-[356px] h-[240px] sm:w-[640px] sm:h-[360px] lg:w-[960px] lg:h-[560px]"
 		src="https://www.youtube.com/embed/jUXM5S3h_Eo?si=VuZcSGYciuch17Dv"
 		title="YouTube video player"
 		frameborder="0"

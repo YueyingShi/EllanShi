@@ -45,7 +45,8 @@
 <!-- projects  -->
 
 <div class="flex flex-col items-center mx-auto py-8 px-4 w-full min-h-full max-w-6xl">
-	<div class="flex flex-wrap gap-2">
+	<!-- filter  -->
+	<div class="hidden lg:flex flex-wrap gap-2">
 		{#each categories as category}
 			<FilterBadge
 				selected={selected === category}
