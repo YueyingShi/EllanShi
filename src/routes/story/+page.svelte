@@ -85,19 +85,24 @@
 					description="I am responsible for UX designer & researcher for digital solutions, which including UX Web apps development, design system set-up & maintenance. "
 				/>
 				<ExperienceElement
-					title="UX Designer & Researcher"
-					subtitle="2022.09 - now | Deerns"
-					description="I am responsible for UX designer & researcher for digital solutions, which including UX Web apps development, design system set-up & maintenance. "
+					title="UX Design Intern"
+					subtitle="2021.09-2022.03 | Accenture"
+					description="Worked as an interaction design intern at VanBerlo, one of the top design studios in the Netherlands under Accenture, I was responsible for user research, interaction and visual design, and user testing for design validation. Participated in client consulting projects and internal design tool development for the design team. "
 				/>
 				<ExperienceElement
-					title="UX Designer & Researcher"
-					subtitle="2022.09 - now | Deerns"
-					description="I am responsible for UX designer & researcher for digital solutions, which including UX Web apps development, design system set-up & maintenance. "
+					title="Installation Artist"
+					subtitle="2022.09 - 2022.12 | Glow Eindhoven"
+					description="The interactive installation 'wayfinding' (fantasy mushrooms) is 80 interactive mushroom lights spreading over the whole two kilometers of the outdoor exhibition path. "
 				/>
 				<ExperienceElement
-					title="UX Designer & Researcher"
-					subtitle="2022.09 - now | Deerns"
-					description="I am responsible for UX designer & researcher for digital solutions, which including UX Web apps development, design system set-up & maintenance. "
+					title="Graphic Designer"
+					subtitle="2022.09 - now | Glow Eindhoven"
+					description="I was also responsible for the visual design of the posters for more than 30 exhibitions throughout the GLOW Festival."
+				/>
+				<ExperienceElement
+					title="UX Designer"
+					subtitle="2018.7-2019.9 | Konka"
+					description="Mainly responsible for interaction design of smart TV software and system, including TV games, video chat , facial recognition applications, voice assistant, etc. Participated in the iteration of the main smart TV system with more than 21.9 million daily active users."
 				/>
 			</div>
 		</div>
