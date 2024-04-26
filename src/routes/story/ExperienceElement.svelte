@@ -7,7 +7,7 @@
 
 <div>
 	<p class="font-medium">{title}</p>
-	<p class="text-slute-600">{subtitle}</p>
+	<p class="opacity-50 backdrop:pb-1">{subtitle}</p>
 	<p>
 		{description}
 	</p>

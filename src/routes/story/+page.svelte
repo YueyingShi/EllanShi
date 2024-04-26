@@ -60,7 +60,7 @@
 	</div>
 </div> -->
 
-<div class="max-w-6xl my-6 mx-auto gap-8">
+<div class="max-w-6xl my-12 mx-auto gap-8">
 	<div class="grid lg:grid-cols-3 gap-8">
 		<div class="space-y-8">
 			<H4>Education</H4>
@@ -77,33 +77,43 @@
 			/>
 		</div>
 		<div class="space-y-8 col-span-2">
-			<H4>Work/Project Experience</H4>
 			<div class="grid lg:grid-cols-2 gap-8">
-				<ExperienceElement
-					title="UX Designer & Researcher"
-					subtitle="2022.09 - now | Deerns"
-					description="I am responsible for UX designer & researcher for digital solutions, which including UX Web apps development, design system set-up & maintenance. "
-				/>
-				<ExperienceElement
-					title="UX Design Intern"
-					subtitle="2021.09-2022.03 | Accenture"
-					description="Worked as an interaction design intern at VanBerlo, one of the top design studios in the Netherlands under Accenture, I was responsible for user research, interaction and visual design, and user testing for design validation. Participated in client consulting projects and internal design tool development for the design team. "
-				/>
-				<ExperienceElement
-					title="Installation Artist"
-					subtitle="2022.09 - 2022.12 | Glow Eindhoven"
-					description="The interactive installation 'wayfinding' (fantasy mushrooms) is 80 interactive mushroom lights spreading over the whole two kilometers of the outdoor exhibition path. "
-				/>
-				<ExperienceElement
-					title="Graphic Designer"
-					subtitle="2022.09 - now | Glow Eindhoven"
-					description="I was also responsible for the visual design of the posters for more than 30 exhibitions throughout the GLOW Festival."
-				/>
-				<ExperienceElement
-					title="UX Designer"
-					subtitle="2018.7-2019.9 | Konka"
-					description="Mainly responsible for interaction design of smart TV software and system, including TV games, video chat , facial recognition applications, voice assistant, etc. Participated in the iteration of the main smart TV system with more than 21.9 million daily active users."
-				/>
+				<div class="space-y-8">
+					<H4>Works</H4>
+					<ExperienceElement
+						title="UX Designer & Researcher"
+						subtitle="2022.09 - now | Deerns"
+						description="I am responsible for UX designer & researcher for digital solutions, which including UX Web apps development, design system set-up & maintenance. "
+					/>
+					<ExperienceElement
+						title="UX Design Intern"
+						subtitle="2021.09-2022.03 | Accenture"
+						description="Worked as an interaction design intern at VanBerlo, one of the top design studios in the Netherlands under Accenture, I was responsible for user research, interaction and visual design, and user testing for design validation. Participated in client consulting projects and internal design tool development for the design team. "
+					/>
+					<ExperienceElement
+						title="UX Designer"
+						subtitle="2018.7-2019.9 | Konka"
+						description="Mainly responsible for interaction design of smart TV software and system, including TV games, video chat , facial recognition applications, voice assistant, etc. Participated in the iteration of the main smart TV system with more than 21.9 million daily active users."
+					/>
+				</div>
+				<div class="space-y-8">
+					<H4>Part-time Projects</H4>
+					<ExperienceElement
+						title="Graphic Designer"
+						subtitle="2022.09 - now | Glow Eindhoven"
+						description="I was also responsible for the visual design of the posters for more than 30 exhibitions throughout the GLOW Festival."
+					/>
+					<ExperienceElement
+						title="Installation Artist"
+						subtitle="2022.09 - 2022.12 | Glow Eindhoven"
+						description="The interactive installation 'Wayfinding' (fantasy mushrooms) is 80 interactive mushroom lights spreading over the whole two kilometers of the outdoor exhibition path. "
+					/>
+					<ExperienceElement
+						title="New-media/Concept Artist"
+						subtitle="2020.3 - 2020.8 | Pixel Forest"
+						description="Responsible for exhibition design and event concept design for new media art exhibitions, wall projection shows, lighting and projection concept design for zoos, botanical gardens, etc. "
+					/>
+				</div>
 			</div>
 		</div>
 	</div>
