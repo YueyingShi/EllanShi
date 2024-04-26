@@ -2,7 +2,7 @@
 	export let author = '';
 </script>
 
-<figure class="mt-10 border-l border-indigo-600 pl-9">
+<figure class="border-l border-indigo-600 pl-9">
 	<blockquote class="font-semibold text-gray-900">
 		<slot />
 	</blockquote>

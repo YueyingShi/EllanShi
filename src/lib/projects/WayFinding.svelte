@@ -31,8 +31,8 @@
 		- in a sea of ​​​​light.
 	</Quotation>
 
-	<img src="/projectimg/glow/mushroom1.jpg" alt="" class="border" />
-	<img src="/projectimg/glow/mushroom2.jpg" alt="" class="border" />
-	<img src="/projectimg/glow/mushroom3.jpg" alt="" class="border" />
-	<img src="/projectimg/glow/mushroom4.jpg" alt="" class="border" />
+	<img src="/projectimg/mushroom/mushroom1.jpg" alt="" class="border" />
+	<img src="/projectimg/mushroom/mushroom2.jpg" alt="" class="border" />
+	<img src="/projectimg/mushroom/mushroom3.jpg" alt="" class="border" />
+	<img src="/projectimg/mushroom/mushroom4.jpg" alt="" class="border" />
 </Chapter>

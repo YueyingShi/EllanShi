@@ -19,6 +19,7 @@
 	import YIUI from '$lib/projects/YIUI.svelte';
 	import Sugar from '$lib/projects/Sugar.svelte';
 	import USVote from '$lib/projects/USVote.svelte';
+	import Glow from '$lib/projects/Glow.svelte';
 
 	let components: any = {
 		Rasch,
@@ -29,7 +30,8 @@
 		EClass,
 		FoodTinder,
 		Sugar,
-		USVote
+		USVote,
+		Glow
 	};
 	import { page } from '$app/stores';
 

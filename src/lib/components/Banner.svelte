@@ -16,7 +16,7 @@
 	{/if}
 
 	<div
-		class="absolute w-full h-full flex flex-col-reverse lg:flex-row items-center p-4 gap-4 lg:gap-8 max-w-6xl mx-auto"
+		class="absolute w-full flex flex-col-reverse lg:flex-row items-center p-4 gap-4 lg:gap-8 max-w-6xl mx-auto"
 	>
 		<div
 			class="flex-1 h-full flex flex-col gap-4 items-center justify-center text-center lg:items-start lg:text-left"
