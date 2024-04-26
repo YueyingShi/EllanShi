@@ -6,7 +6,7 @@
 </script>
 
 <div>
-	<H4>{title}</H4>
+	<p class="font-medium">{title}</p>
 	<p class="text-slute-600">{subtitle}</p>
 	<p>
 		{description}
