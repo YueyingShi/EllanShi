@@ -13,11 +13,7 @@
 <Banner>
 	<div class="space-y-8 lg:flex lg:items-center lg:space-y-0 lg:gap-8">
 		<div class="w-1/3">
-			<img
-				src="/EllanPhoto.jfif"
-				alt=""
-				class=" object-contain rounded-full border-4 ring-slate-500"
-			/>
+			<img src="/EllanPhoto.jpg" alt="" class=" object-contain rounded-full" />
 		</div>
 		<div class=" w-2/3 space-y-6 h-full">
 			<img src="/ellanSign.svg" class="h-12 pb-1 md:h-16 inline" alt="Ellan sign" />
