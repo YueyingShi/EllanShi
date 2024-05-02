@@ -61,12 +61,12 @@
 		<div class="space-y-8">
 			<H4>Education</H4>
 			<ExperienceElement
-				title="Human-Technology Interaction Master"
+				title="MSc Human-Computer Interaction"
 				subtitle="2020-2022 | Eindhoven University of Technology"
 				description="Courses include user experience methods, data analysis, ergonomics, data-aided design, data visualization, machine learning and design, principles of robot interaction, etc."
 			/>
 			<ExperienceElement
-				title="Industrial Design Bechelor"
+				title="BEng Industrial Design"
 				subtitle="2014-2018 | South China University of Technology"
 				description="Courses include Interaction Design, Vehicle Design, 3D Design, Design Psychology, Design
 		Management, Design Methodology, etc."
