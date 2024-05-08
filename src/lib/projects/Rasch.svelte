@@ -112,7 +112,6 @@
 		<Divider />
 		<H5>Problem is, the studies are not comparable</H5>
 
-<<<<<<< Updated upstream
 		<p>
 			The study addresses challenges in traditional virtual environment (VE) presence measurement
 			methods
@@ -131,44 +130,6 @@
 				reliable conclusions about presence in VEs.
 			</li>
 		</ul>
-=======
-			<p>
-				Numerous methods exist for measuring presence based on different conceptualizations.
-				Traditionally, three approaches are employed: self-reports, behavioral observations, and
-				physiological measures.
-			</p>
-
-			<ThreeCols>
-				<ThreeColsItem title="Self-reports">
-					<svelte:fragment slot="icon">
-						<Icon src={ClipboardDocumentList} size="24px" mini color="white" />
-					</svelte:fragment>
-					<svelte:fragment slot="description">
-						Self-reports involve questionnaires and interviews, offering subjective feedback. While
-						cost-effective and comparable between studies, they risk bias and may lack objectivity.
-					</svelte:fragment>
-				</ThreeColsItem>
-				<ThreeColsItem title="Behavioral observation">
-					<svelte:fragment slot="icon">
-						<Icon src={MagnifyingGlass} size="24px" mini color="white" />
-					</svelte:fragment>
-					<svelte:fragment slot="description">
-						Behavioral observation gauges real-life consistency, yet predicting participant
-						reactions remains challenging. Conventional measures encounter issues of inconsistency
-						and a lack of standardization.
-					</svelte:fragment>
-				</ThreeColsItem>
-				<ThreeColsItem title="Physiological measures">
-					<svelte:fragment slot="icon">
-						<Icon src={ChartBar} size="24px" mini color="white" />
-					</svelte:fragment>
-					<svelte:fragment slot="description">
-						Physiological measures, including EEG and heart rate, provide more objective insights
-						but face limitations such as cost and sensitivity to content.
-					</svelte:fragment>
-				</ThreeColsItem>
-			</ThreeCols>
->>>>>>> Stashed changes
 
 		<p>
 			To overcome this, a Rasch-based approach by Haans and IJsselsteijn is introduced. It treats
