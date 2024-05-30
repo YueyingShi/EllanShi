@@ -7,7 +7,7 @@
 </script>
 
 <div class="max-w-4xl flex flex-col gap-4">
-	<ChapterHeader>Introduction</ChapterHeader>
+	<ChapterHeader bg_title="00">Introduction</ChapterHeader>
 	<p />
 	<H4>Understanding Presence</H4>
 	<p>
@@ -26,7 +26,7 @@
 		medium becomes transparent or invisible to the user, creating a sense of being in the virtual
 		world as if it were real.
 	</p>
-	<ChapterHeader bg_title="01">The Concept of Presence</ChapterHeader>
+	<ChapterHeader bg_title="01" id="Introduction">The Concept of Presence</ChapterHeader>
 
 	<p>
 		Presence in virtual environments refers to the user's psychological state of being immersed in a
@@ -102,7 +102,7 @@
 		<strong>Lack of Standardization:</strong> No standardized instrument exists to compare presence across
 		different studies and virtual environments, making it hard to draw reliable conclusions.
 	</p>
-	<ChapterHeader bg_title="02">The Rasch Model</ChapterHeader>
+	<ChapterHeader bg_title="02" id="Research">The Rasch Model</ChapterHeader>
 
 	<p>
 		To address the challenges for traditional presence measurement, Haans and IJsselsteijn proposed
@@ -133,7 +133,9 @@
 		VE but also assesses the abilities of users, providing a comprehensive understanding of how
 		immersive a virtual experience can be.
 	</p>
-	<ChapterHeader bg_title="03">Current Study: Goals and Research Questions</ChapterHeader>
+	<ChapterHeader bg_title="03" id="Research"
+		>Current Study: Goals and Research Questions</ChapterHeader
+	>
 	<H4>Goals</H4>
 	<ol>
 		<li>
@@ -168,7 +170,7 @@
 		comparisons and enhancing the understanding of user experiences in different VEs.
 	</p>
 
-	<ChapterHeader bg_title="04">Our Methodology</ChapterHeader>
+	<ChapterHeader bg_title="04" id="Methods">Our Methodology</ChapterHeader>
 	<p>
 		Our study was meticulously designed to assess the sense of presence in different virtual
 		environments. Participants experienced two different VEs, each with distinct levels of
@@ -195,7 +197,7 @@
 		detailed and accurate measurement of presence across diverse virtual settings.
 	</p>
 
-	<ChapterHeader bg_title="05">Key Findings and Insights</ChapterHeader>
+	<ChapterHeader bg_title="05" id="Key findings">Key Findings and Insights</ChapterHeader>
 	<p>
 		The analysis revealed that certain elements, such as spatial audio, realistic graphics, and
 		interactive components, significantly enhance the sense of presence in virtual environments. The
@@ -210,7 +212,7 @@
 		<img src="/projectimg/rasch/17b.png" alt="" class="w-1/3 px-4 bg-white" />
 		<img src="/projectimg/rasch/17c.png" alt="" class="w-1/3 px-4 bg-white" />
 	</div>
-	<ChapterHeader bg_title="06">Challenges and Future Directions</ChapterHeader>
+	<ChapterHeader bg_title="06" id="Discussion">Challenges and Future Directions</ChapterHeader>
 
 	<p>
 		While our study provided valuable insights, it also highlighted several challenges. Ensuring a
@@ -220,7 +222,7 @@
 		challenges, we aim to further refine our understanding of presence in virtual environments,
 		paving the way for even more immersive and effective VR experiences.
 	</p>
-	<ChapterHeader bg_title="07">Conclusion</ChapterHeader>
+	<ChapterHeader bg_title="07" id="Conclusion">Conclusion</ChapterHeader>
 
 	<p>
 		Our project illustrates the potential of the Rasch Model in measuring the sense of presence in
