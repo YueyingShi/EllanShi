@@ -13,6 +13,8 @@
 	import EClass from '$lib/projects/EClass.svelte';
 	import FoodTinder from '$lib/projects/FoodTinder.svelte';
 	import Rasch from '$lib/projects/Rasch.svelte';
+	import Rasch2 from '$lib/projects/Rasch2.svelte';
+
 	import Roommate from '$lib/projects/Roommate.svelte';
 	import WayFinding from '$lib/projects/WayFinding.svelte';
 	import WithU from '$lib/projects/WithU.svelte';
@@ -23,6 +25,7 @@
 
 	let components: any = {
 		Rasch,
+		Rasch2,
 		WithU,
 		Roommate,
 		YIUI,
