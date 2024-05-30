@@ -4,12 +4,13 @@
 	import ThreeColsItem from '$lib/components/molecules/ThreeColsItem.svelte';
 	import { Icon, ClipboardDocumentList, MagnifyingGlass, ChartBar } from 'svelte-hero-icons';
 	import H4 from '$lib/components/atoms/headings/H4.svelte';
+	import H5 from '$lib/components/atoms/headings/H5.svelte';
 </script>
 
 <div class="max-w-4xl flex flex-col gap-4">
 	<ChapterHeader bg_title="00">Introduction</ChapterHeader>
 	<p />
-	<H4>Understanding Presence</H4>
+	<H5>Understanding Presence</H5>
 	<p>
 		In today’s digital age, virtual environments (VEs) are revolutionizing education, training, and
 		entertainment. However, a crucial aspect of these experiences is the sense of presence—the
@@ -136,7 +137,7 @@
 	<ChapterHeader bg_title="03" id="Research"
 		>Current Study: Goals and Research Questions</ChapterHeader
 	>
-	<H4>Goals</H4>
+	<H5>Goals</H5>
 	<ol>
 		<li>
 			<strong>Extend the Presence Item Bank:</strong> Propose new presence indicators and validate them
@@ -148,7 +149,7 @@
 		</li>
 	</ol>
 
-	<H4>Research Questions</H4>
+	<H5>Research Questions</H5>
 	<ol>
 		<li>
 			Can presence be measured effectively in each VE using a combination of self-reports,
@@ -158,7 +159,7 @@
 		<li>Do different VEs elicit different levels of presence?</li>
 	</ol>
 
-	<H4>Exploratory Question</H4>
+	<H5>Exploratory Question</H5>
 	<p>
 		Do the novel Rasch-based measures correlate with those from the conventional IPQ presence
 		instrument?
@@ -198,30 +199,106 @@
 	</p>
 
 	<ChapterHeader bg_title="05" id="Key findings">Key Findings and Insights</ChapterHeader>
+	<H5>Data Analysis Overview</H5>
 	<p>
-		The analysis revealed that certain elements, such as spatial audio, realistic graphics, and
-		interactive components, significantly enhance the sense of presence in virtual environments. The
-		Rasch Model provided a nuanced understanding of how these factors impact user experience. Our
-		findings suggest that to create more immersive VR experiences, developers should focus on these
-		critical elements. The practical applications of this research are vast, offering valuable
-		insights for improving VR-based educational tools, training programs, and entertainment
-		applications, making them more engaging and effective.
+		The main data analysis was performed on Rasch-based approach items, including self-report,
+		behavioral, and physiological data, from 42 participants in the pit VE and 40 participants in
+		the night road environment. The pit VE had 20 items, with two items having missing data due to
+		human error. Similarly, the street VE also had 20 items, with one item missing data because the
+		corresponding event did not trigger for some participants.
+	</p>
+	<p>
+		Item reliability for both environments was high (pit VE: 0.90, street VE: 0.89), indicating
+		sufficient precision for decision-making.
+	</p>
+
+	<H5>Rasch Analysis for Pit VE</H5>
+	<p>
+		The Rasch analysis focused on item difficulty rather than presence levels. Item difficulty was
+		estimated along with standard errors and the probability of a standard person achieving the
+		item. Most items fit well within the Rasch model, except item 6, which was not a good indicator
+		of presence and was excluded from further analysis.
+	</p>
+
+	<H5>Rasch Analysis for Street VE</H5>
+	<p>
+		The same analysis was conducted for the street VE. Again, item 6 showed poor fit and was
+		excluded. All other items demonstrated adequate fit within the Rasch model.
+	</p>
+
+	<H5>Comparison Analysis</H5>
+	<p>
+		The goal was to compare the two studies using different subsets of items. Common items were used
+		as anchor points for scale equating. Item 1 showed significant bias and was removed from the
+		analysis, as was item 5 due to differences in navigation modes. After removing these items, the
+		correlation between the remaining common items was strong (0.93), allowing for successful scale
+		equating.
 	</p>
 	<div class="flex gap-4 py-4">
 		<img src="/projectimg/rasch/17a.png" alt="" class="w-1/3 px-4 bg-white" />
 		<img src="/projectimg/rasch/17b.png" alt="" class="w-1/3 px-4 bg-white" />
 		<img src="/projectimg/rasch/17c.png" alt="" class="w-1/3 px-4 bg-white" />
 	</div>
-	<ChapterHeader bg_title="06" id="Discussion">Challenges and Future Directions</ChapterHeader>
-
+	<H5>Scale Equation</H5>
 	<p>
-		While our study provided valuable insights, it also highlighted several challenges. Ensuring a
-		diverse participant pool is crucial for comprehensive results, and continuously updating VR
-		technologies and methodologies is essential. Future research will expand to different types of
-		virtual environments and incorporate more advanced VR technologies. By addressing these
-		challenges, we aim to further refine our understanding of presence in virtual environments,
-		paving the way for even more immersive and effective VR experiences.
+		With five common items chosen as anchors, scale equating was conducted, resulting in adequate
+		fit indices. The analysis ensured that measures from different studies could be merged into one
+		common scale.
 	</p>
+
+	<H5>Presence Difference Between VEs</H5>
+	<p>
+		After equating the scales, a t-test was conducted to compare the presence levels between the two
+		VEs. The results showed no significant difference between the two environments (t(80)=-1.85,
+		p=0.07), indicating that both environments were equally capable of eliciting a sense of
+		presence.
+	</p>
+
+	<ChapterHeader bg_title="06" id="Discussion">Challenges and Future Directions</ChapterHeader>
+	<p>
+		The current study used the Rasch-based approach by Haans and IJsselsteijn (2018) to measure the
+		sense of presence. The research aimed to extend the item bank for measuring presence, validate
+		self-report, behavioral, and physiological measures, demonstrate comparisons between studies
+		using different subsets of indicators, test differences between two VEs, and explore the
+		convergent validity with the IPQ instrument.
+	</p>
+
+	<H5>Measuring Presence</H5>
+	<p>
+		The study validated the subset of items used as indicators of presence in each VE. Eight common
+		items were tested across the VEs, but item 6 failed to fit the model in both analyses. Items 1
+		and 5 were biased towards the pit VE and were not used as anchors for scale equating. Five items
+		with sufficient invariance were used for scale equating, and the linking quality was adequate.
+	</p>
+
+	<H5>Comparison of VEs</H5>
+	<p>
+		The Rasch model effectively combined measures from multiple studies into one scale, but no
+		significant difference was found between the VEs. Possible reasons include a lower presence
+		level in the current pit VE and a narrow range of item difficulties. The study focused on
+		demonstrating the feasibility of comparison rather than precise person measurement.
+	</p>
+
+	<H5>Convergent Validity</H5>
+	<p>
+		The new Rasch-based approach was moderately correlated with all dimensions of the IPQ,
+		indicating it measured similar constructs but slightly different aspects of presence.
+	</p>
+
+	<H5>Limitations and Future Work</H5>
+
+	The study had several limitations:
+	<ul>
+		<li>Natural walking was not possible, potentially reducing presence levels.</li>
+		<li>Small item sets limited precise person measures.</li>
+		<li>
+			Adjustments were made in the street VE to ensure participants encountered enough events.
+		</li>
+	</ul>
+	Future research should explore alternative methods for analyzing physiological data, extend the item
+	bank, and increase the item difficulty range for better separation and validation of human ability
+	estimates.
+
 	<ChapterHeader bg_title="07" id="Conclusion">Conclusion</ChapterHeader>
 
 	<p>
