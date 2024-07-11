@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Overview from './Overview.svelte';
-
+	import Overview from '$lib/components/Overview.svelte';
 	/** @type {import('./$types').PageData} */
-	import { supabase } from '$lib/supabaseClient';
+	import Papa from 'papaparse';
+	// import { supabase } from '$lib/supabaseClient';
 	import { onMount } from 'svelte';
 	let projects: any = [];
 	import Banner from '$lib/components/Banner.svelte';
@@ -42,8 +42,16 @@
 
 	async function getAllProjects() {
 		try {
-			const { data } = await supabase.from('projects').select();
-			projects = data;
+			// const { data } = await supabase.from('projects').select();
+			// projects = data;
+			const response = await fetch('/csv/projects.csv');
+			const csv = await response.text();
+			Papa.parse(csv, {
+				header: true,
+				complete: function (results) {
+					projects = results.data;
+				}
+			});
 		} catch (err) {
 			console.log(err);
 		}
@@ -63,15 +71,12 @@
 	</Banner>
 	<!-- here is the general background information block -->
 
-	<div class="max-w-6xl my-6 px-4 mx-auto">
+	<TOC chapters={current_project.content ?? []} />
+
+	<div class="max-w-3xl my-6 px-4 mx-auto">
 		<Overview {current_project} />
-		<div class="flex gap-12">
-			<div class="hidden lg:block">
-				<TOC chapters={current_project.content ?? []} />
-			</div>
-			<!-- <svelte:component this={components[current_project.content_component ?? 'WithU']} /> -->
-			<svelte:component this={components[current_project.content_component]} />
-		</div>
+		<!-- <svelte:component this={components[current_project.content_component ?? 'WithU']} /> -->
+		<svelte:component this={components[current_project.content_component]} />
 	</div>
 {:else}
 	<div class=" max-w-6xl min-h-[80vh] mx-auto flex flex-col justify-center gap-8">
