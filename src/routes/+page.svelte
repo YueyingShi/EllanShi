@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { supabase } from '$lib/supabaseClient';
+	// import { supabase } from '$lib/supabaseClient';
 	import { onMount } from 'svelte';
-	import { user } from '$lib/stores.js';
-	let projects: any = [];
+	import Papa from 'papaparse';
+	let projects: any;
 
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import FilterBadge from '$lib/components/atoms/FilterBadge.svelte';
@@ -18,8 +18,16 @@
 	}
 	async function getAllProjects() {
 		try {
-			const { data } = await supabase.from('projects').select();
-			projects = data;
+			// const { data } = await supabase.from('projects').select();
+			// projects = data
+			const response = await fetch('$lib/csv/projects.csv');
+			const csv = await response.text();
+			Papa.parse(csv, {
+				header: true,
+				complete: function (results) {
+					projects = results.data;
+				}
+			});
 			sortProject();
 		} catch (err) {
 			console.log(err);
@@ -27,8 +35,8 @@
 	}
 	onMount(async () => {
 		await getAllProjects();
+		console.log(projects);
 	});
-	$: console.log(projects);
 </script>
 
 <Banner>
@@ -60,7 +68,7 @@
 	</div>
 
 	<div id="projects" class="flex-1 mt-4 w-full gap-x-4 gap-y-8 grid xl:grid-cols-2">
-		{#each projects as project, i}
+		<!-- {#each projects as project, i}
 			<div
 				class={selected === 'All' ? ' ' : project.keywords?.includes(selected) ? '' : 'hidden'}
 				transition:fade={{ delay: i * 100, duration: 300 }}
@@ -73,6 +81,6 @@
 					/>
 				</a>
 			</div>
-		{/each}
+		{/each} -->
 	</div>
 </div>
