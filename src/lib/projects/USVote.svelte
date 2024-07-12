@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Chapter from '$lib/components/molecules/Chapter.svelte';
-	import H4 from '$lib/components/atoms/headings/H4.svelte';
+	import H4 from '$lib/components/atoms/types/H4.svelte';
 </script>
 
 <Chapter>

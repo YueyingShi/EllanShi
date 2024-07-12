@@ -1,6 +1,6 @@
 <script>
 	import Button from '$lib/components/atoms/button/Button.svelte';
-	import H2 from '$lib/components/atoms/headings/H2.svelte';
+	import H2 from '$lib/components/atoms/types/H2.svelte';
 </script>
 
 <div class=" max-w-6xl min-h-[80vh] mx-auto flex flex-col justify-center gap-8">

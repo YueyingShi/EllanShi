@@ -1,5 +1,5 @@
 <script lang="ts">
-	import H5 from '$lib/components/atoms/headings/H5.svelte';
+	import H5 from '$lib/components/atoms/types/H5.svelte';
 	export let title: string = '';
 	export let description: string = '';
 	export let bg_url: string =

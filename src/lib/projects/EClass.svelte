@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Chapter from '$lib/components/molecules/Chapter.svelte';
-	import H3 from '$lib/components/atoms/headings/H3.svelte';
 
 	import ChapterHeader from '$lib/components/molecules/ChapterHeader.svelte';
 </script>

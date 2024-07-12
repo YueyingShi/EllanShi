@@ -1,6 +1,6 @@
 <script>
-	import H4 from '$lib/components/atoms/headings/H4.svelte';
-	import H5 from '$lib/components/atoms/headings/H5.svelte';
+	import H4 from '$lib/components/atoms/types/H4.svelte';
+	import H5 from '$lib/components/atoms/types/H5.svelte';
 	import ChapterHeader from '$lib/components/molecules/ChapterHeader.svelte';
 </script>
 

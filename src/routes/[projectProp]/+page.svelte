@@ -7,13 +7,13 @@
 	let projects: any = [];
 	import Banner from '$lib/components/Banner.svelte';
 	import TOC from '$lib/components/TOC.svelte';
-	import H2 from '$lib/components/atoms/headings/H2.svelte';
+	import H2 from '$lib/components/atoms/types/H2.svelte';
 	import Button from '$lib/components/atoms/button/Button.svelte';
 
 	import EClass from '$lib/projects/EClass.svelte';
 	import FoodTinder from '$lib/projects/FoodTinder.svelte';
 	import Rasch from '$lib/projects/Rasch.svelte';
-	import Rasch2 from '$lib/projects/Rasch2.svelte';
+	import Rasch2 from '$lib/projects/Rasch.svelte';
 
 	import Roommate from '$lib/projects/Roommate.svelte';
 	import WayFinding from '$lib/projects/WayFinding.svelte';
@@ -25,7 +25,6 @@
 
 	let components: any = {
 		Rasch,
-		Rasch2,
 		WithU,
 		Roommate,
 		YIUI,
@@ -73,7 +72,7 @@
 
 	<TOC chapters={current_project.content ?? []} />
 
-	<div class="max-w-3xl my-6 px-4 mx-auto">
+	<div class="max-w-3xl my-6 px-4 mx-auto space-y-12">
 		<Overview {current_project} />
 		<!-- <svelte:component this={components[current_project.content_component ?? 'WithU']} /> -->
 		<svelte:component this={components[current_project.content_component]} />

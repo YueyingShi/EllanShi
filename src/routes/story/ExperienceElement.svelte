@@ -1,5 +1,5 @@
 <script lang="ts">
-	import H4 from '$lib/components/atoms/headings/H4.svelte';
+	import H4 from '$lib/components/atoms/types/H4.svelte';
 	export let title: string = '';
 	export let subtitle: string = '';
 	export let description: string = '';

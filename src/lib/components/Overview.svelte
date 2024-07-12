@@ -1,5 +1,5 @@
 <script lang="ts">
-	import H3 from '$lib/components/atoms/headings/H3.svelte';
+	import H3 from '$lib/components/atoms/types/H3.svelte';
 	export let current_project: any = [];
 </script>
 

@@ -70,7 +70,13 @@
 	<div id="projects" class="flex-1 mt-4 w-full gap-x-4 gap-y-8 grid lg:grid-cols-2">
 		{#each projects as project, i}
 			<div
-				class={selected === 'All' ? ' ' : project.keywords?.includes(selected) ? '' : 'hidden'}
+				class={!project.keywords
+					? 'hidden'
+					: selected === 'All'
+					? ' '
+					: project.keywords?.includes(selected)
+					? ''
+					: 'hidden'}
 				transition:fade={{ delay: i * 100, duration: 300 }}
 			>
 				<a href="/{project?.prop ? project.prop : 'notfound'}">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import H4 from '$lib/components/atoms/headings/H4.svelte';
+	import H4 from '$lib/components/atoms/types/H4.svelte';
 	import Chapter from '$lib/components/molecules/Chapter.svelte';
 	import ChapterHeader from '$lib/components/molecules/ChapterHeader.svelte';
 </script>

@@ -2,12 +2,12 @@
 	import ExperienceElement from './ExperienceElement.svelte';
 
 	import Banner from '$lib/components/Banner.svelte';
-	import H2 from '$lib/components/atoms/headings/H2.svelte';
+	import H2 from '$lib/components/atoms/types/H2.svelte';
 	import ChapterHeader from '$lib/components/molecules/ChapterHeader.svelte';
 
 	import { Icon, ArrowUp, AdjustmentsHorizontal, Funnel } from 'svelte-hero-icons';
 	import Chapter from '$lib/components/molecules/Chapter.svelte';
-	import H4 from '$lib/components/atoms/headings/H4.svelte';
+	import H4 from '$lib/components/atoms/types/H4.svelte';
 </script>
 
 <Banner>
