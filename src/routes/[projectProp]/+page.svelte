@@ -57,7 +57,7 @@
 	}
 	onMount(async () => {
 		await getAllProjects();
-		current_project = projects.find((e) => e.prop === $page.params.projectProp);
+		current_project = projects.find((e: any) => e.prop === $page.params.projectProp);
 	});
 </script>
 
@@ -65,7 +65,7 @@
 	<Banner imageUrl={current_project.cover_image ?? ''}>
 		<h1 class="text-xl md:text-4xl w-2/3 font-medium">{current_project?.title}</h1>
 		<p class="text-xl md:text-2xl w-2/3 font-medium opacity-50 hover:opacity-75">
-			{current_project?.description}
+			{@html current_project?.description}
 		</p>
 	</Banner>
 	<!-- here is the general background information block -->

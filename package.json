@@ -24,8 +24,13 @@
 		"@storybook/test": "^7.6.7",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
+		"@types/d3": "^7.4.3",
 		"@types/jquery": "^3.5.25",
+<<<<<<< Updated upstream
 		"@types/papaparse": "^5.3.14",
+=======
+		"@types/topojson": "^3.2.6",
+>>>>>>> Stashed changes
 		"autoprefixer": "^10.4.15",
 		"postcss": "^8.4.29",
 		"prettier": "^2.8.0",
@@ -44,8 +49,14 @@
 	"dependencies": {
 		"@supabase/supabase-js": "^2.42.1",
 		"chart.js": "^4.4.2",
+<<<<<<< Updated upstream
 		"html2canvas": "^1.4.1",
 		"papaparse": "^5.4.1",
 		"svelte-hero-icons": "^5.0.0"
+=======
+		"d3": "^7.9.0",
+		"svelte-hero-icons": "^5.0.0",
+		"topojson": "^3.0.2"
+>>>>>>> Stashed changes
 	}
 }

@@ -1,5 +1,8 @@
 <script lang="ts">
+<<<<<<< Updated upstream
 	import H5 from '$lib/components/atoms/types/H5.svelte';
+=======
+>>>>>>> Stashed changes
 	export let title: string = '';
 	export let description: string = '';
 	export let bg_url: string =
@@ -12,5 +15,6 @@
 />
 <div class="py-3">
 	<p class="text-lg font-semibold">{title}</p>
-	<p class="text-base text-slate-600">{description}</p>
+	<!-- Use {@html} directive to render description as HTML -->
+	<div class="text-base text-slate-600">{@html description}</div>
 </div>
