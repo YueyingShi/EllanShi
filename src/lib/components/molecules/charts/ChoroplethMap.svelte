@@ -1,24 +1,61 @@
 <script>
-	import * as d3 from 'd3';
+	import Plotly from 'plotly.js-dist';
 
-	export let data;
-	export let width = 640;
-	export let height = 400;
-	export let marginTop = 20;
-	export let marginRight = 20;
-	export let marginBottom = 20;
-	export let marginLeft = 20;
+	// Example population data for each state
+	const data = [
+		{
+			type: 'choropleth',
+			z: [
+				39538223, // California
+				29145505, // Texas
+				20201249, // Florida
+				19615085 // New York
+				// Add more states here
+			],
+			text: [
+				'California',
+				'Texas',
+				'Florida',
+				'New York'
+				// Add more states here
+			],
+			colorscale: 'Viridis',
+			colorbar: {
+				title: 'Population'
+			},
+			locationmode: 'USA-states',
+			locations: [
+				'CA',
+				'TX',
+				'FL',
+				'NY'
+				// Add more state abbreviations here
+			]
+		}
+	];
 
-	$: x = d3.scaleLinear([0, data.length - 1], [marginLeft, width - marginRight]);
-	$: y = d3.scaleLinear(d3.extent(data), [height - marginBottom, marginTop]);
-	$: line = d3.line((d, i) => x(i), y);
+	// Layout for the map
+	const layout = {
+		title: 'US Population by State',
+		geo: {
+			scope: 'usa',
+			showland: true
+		}
+	};
+
+	// Render the plot after the component mounts
+	import { onMount } from 'svelte';
+	onMount(() => {
+		Plotly.newPlot('map', data, layout);
+	});
 </script>
 
-<svg {width} {height}>
-	<path fill="none" stroke="currentColor" stroke-width="1.5" d={line(data)} />
-	<g fill="white" stroke="currentColor" stroke-width="1.5">
-		{#each data as d, i}
-			<circle key={i} cx={x(i)} cy={y(d)} r="2.5" />
-		{/each}
-	</g>
-</svg>
+<div class="container mx-auto p-4">
+	<div id="map" class="w-full h-96" />
+</div>
+
+<style>
+	#map {
+		height: 600px; /* Adjust height as needed */
+	}
+</style>

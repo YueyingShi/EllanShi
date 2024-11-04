@@ -46,9 +46,10 @@
 	"dependencies": {
 		"@supabase/supabase-js": "^2.42.1",
 		"chart.js": "^4.4.2",
+		"d3": "^7.9.0",
 		"html2canvas": "^1.4.1",
 		"papaparse": "^5.4.1",
-		"d3": "^7.9.0",
+		"plotly.js": "^2.35.2",
 		"svelte-hero-icons": "^5.0.0",
 		"topojson": "^3.0.2"
 	}

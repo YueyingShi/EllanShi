@@ -1,11 +1,9 @@
 <script lang="ts">
 	import Chapter from '$lib/components/molecules/Chapter.svelte';
 	import H4 from '$lib/components/atoms/types/H4.svelte';
-	import ChoroplethMap from '$lib/components/molecules/charts/ChoroplethMap.svelte';
 </script>
 
 <Chapter>
-	<!-- <ChoroplethMap /> -->
 	<iframe
 		class=" w-[356px] h-[240px] sm:w-[640px] sm:h-[360px] lg:w-[960px] lg:h-[560px]"
 		src="https://www.youtube.com/embed/jUXM5S3h_Eo?si=VuZcSGYciuch17Dv"
