@@ -10,7 +10,13 @@
 	</div>
 	<div class="flex gap-2">
 		<p class="text-slate-400 w-24 flex-none">Start date</p>
-		<p class="flex-1">{current_project?.date}</p>
+		<p class="flex-1">
+			{new Date(current_project?.date).toLocaleDateString('en-GB', {
+				day: 'numeric',
+				month: 'long',
+				year: 'numeric'
+			})}
+		</p>
 	</div>
 	<div class="flex gap-2">
 		<p class="text-slate-400 w-24 flex-none">Scope</p>
