@@ -35,7 +35,6 @@
 	}
 	onMount(async () => {
 		await getAllProjects();
-		// console.log(projects);
 	});
 </script>
 

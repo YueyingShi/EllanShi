@@ -1,8 +1,5 @@
 <script lang="ts">
-<<<<<<< Updated upstream
 	import H5 from '$lib/components/atoms/types/H5.svelte';
-=======
->>>>>>> Stashed changes
 	export let title: string = '';
 	export let description: string = '';
 	export let bg_url: string =

@@ -19,6 +19,6 @@
 
 	<div class="flex gap-2">
 		<p class="text-slate-400 w-24 flex-none">Brief</p>
-		<p class="flex-1">{current_project?.introduction ?? '--'}</p>
+		<p class="flex-1">{@html current_project?.introduction ?? '--'}</p>
 	</div>
 </div>

@@ -3,7 +3,6 @@
 	import { page } from '$app/stores';
 	let basic = 'font-semibold pb-1 border-gray-600 hover:border-b-2 opacity-50 hover:opacity-75';
 	let active = 'border-b-2  border-gray-600 opacity-100';
-	console.log($page.route.id, $page.params);
 </script>
 
 <svelte:window bind:scrollY={y} />
