@@ -6,7 +6,9 @@
 </script>
 
 <div class="bg-gray-100">
-	<h1 class="text-2xl text-center p-4">Population Choropleth Map</h1>
+	<h1 class="text-2xl text-center p-4">
+		{years[yearindex]} GENERAL ELECTION VOTES CAST BY PARTY Choropleth Map
+	</h1>
 	<ChoroplethMap currentyear={years[yearindex]} />
 </div>
 

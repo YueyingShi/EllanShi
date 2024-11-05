@@ -74,7 +74,6 @@
 	}
 </script>
 
-<p>{currentyear}</p>
 <div id="myDiv" class="plot-container" />
 
 <style>
