@@ -4,7 +4,8 @@
 	import { tick } from 'svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import ScrollToTopButton from '$lib/components/atoms/button/ScrollToTopButton.svelte';
-	import { Analytics } from '@vercel/analytics/next';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	injectAnalytics();
 	let loading = true;
 
 	async function loadData() {
@@ -26,7 +27,6 @@
 			<Footer />
 		</div>
 		<ScrollToTopButton />
-		<Analytics />
 	</body>
 {/if}
 
