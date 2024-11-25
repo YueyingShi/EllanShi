@@ -45,6 +45,7 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/supabase-js": "^2.42.1",
+		"@vercel/analytics": "^1.4.1",
 		"chart.js": "^4.4.2",
 		"d3": "^7.9.0",
 		"html2canvas": "^1.4.1",
